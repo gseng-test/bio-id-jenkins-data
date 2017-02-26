@@ -1,0 +1,14 @@
+workspace
+updates
+logs
+nodeMonitors.xml
+userContent
+nodes
+hudson.plugins.git.GitTool.xml
+hudson.model.UpdateCenter.xml
+plugins
+war
+copy_reference_file.log
+
+jobs/config-backup-job/builds
+jobs/config-backup-job/nextBuildNumber

@@ -1,0 +1,176 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.plugins.git.GitSCM" plugin="git@3.0.1">
+    <configVersion>2</configVersion>
+    <userRemoteConfigs>
+      <hudson.plugins.git.UserRemoteConfig>
+        <url>http://zistvy90:7990/scm/tge36/bio-ident.git</url>
+        <credentialsId>3d19ebff-509b-47e4-bf4c-20acb19f0cf9</credentialsId>
+      </hudson.plugins.git.UserRemoteConfig>
+    </userRemoteConfigs>
+    <branches>
+      <hudson.plugins.git.BranchSpec>
+        <name>*/master</name>
+      </hudson.plugins.git.BranchSpec>
+    </branches>
+    <doGenerateSubmoduleConfigurations>false</doGenerateSubmoduleConfigurations>
+    <submoduleCfg class="list"/>
+    <extensions/>
+  </scm>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <hudson.tasks.Shell>
+      <command>#!/bin/bash -eu
+
+# Start by cleaning out all
+rm -rf /integration/build/*
+
+# Copy the workspace into mounted Docker volume
+cp -R ${WORKSPACE}/* /integration/build/
+
+# create and source the environment variables
+/integration/build/mgmt/terraform/service-setup/set-cpu-memory-vars-dev-low-cpu.sh
+
+source /tmp/env-export.sh
+
+cd /integration/build/mgmt/scripts
+
+./produce-jobs.sh
+
+./start-minimal-jobs.sh</command>
+    </hudson.tasks.Shell>
+    <hudson.tasks.Shell>
+      <command>#!/bin/bash -eu
+
+cd /integration/build/mgmt/scripts
+
+source export-control-tool-ips.sh
+
+integration_job_id=$(./run-batch-job.sh unit-integration-tests)
+
+./wait-for-job-to-run.sh $integration_job_id tester 1
+
+./wait-for-job-to-complete.sh $integration_job_id
+
+nomad logs $(./get-alloc-id-from-job-id.sh $integration_job_id)
+
+mkdir -p /var/jenkins_home/jobs/bio-id-integration/workspace/mgmt/setup/docker/UnitIntegrationTest/Test.Results
+
+cp -R /integration/build/mgmt/setup/docker/UnitIntegrationTest/Test.Results/*.xml /var/jenkins_home/jobs/bio-id-integration/workspace/mgmt/setup/docker/UnitIntegrationTest/Test.Results/</command>
+    </hudson.tasks.Shell>
+    <org.jenkinsci.plugins.xunit.XUnitBuilder plugin="xunit@1.102">
+      <types>
+        <XUnitDotNetTestType>
+          <pattern>**/mgmt/setup/docker/UnitIntegrationTest/Test.Results/*.xml</pattern>
+          <skipNoTestFiles>false</skipNoTestFiles>
+          <failIfNotNew>true</failIfNotNew>
+          <deleteOutputFiles>true</deleteOutputFiles>
+          <stopProcessingIfError>true</stopProcessingIfError>
+        </XUnitDotNetTestType>
+      </types>
+      <thresholds>
+        <org.jenkinsci.plugins.xunit.threshold.FailedThreshold>
+          <unstableThreshold>0</unstableThreshold>
+          <unstableNewThreshold>0</unstableNewThreshold>
+          <failureThreshold>0</failureThreshold>
+          <failureNewThreshold>0</failureNewThreshold>
+        </org.jenkinsci.plugins.xunit.threshold.FailedThreshold>
+        <org.jenkinsci.plugins.xunit.threshold.SkippedThreshold>
+          <unstableThreshold></unstableThreshold>
+          <unstableNewThreshold></unstableNewThreshold>
+          <failureThreshold></failureThreshold>
+          <failureNewThreshold></failureNewThreshold>
+        </org.jenkinsci.plugins.xunit.threshold.SkippedThreshold>
+      </thresholds>
+      <thresholdMode>1</thresholdMode>
+      <extraConfiguration>
+        <testTimeMargin>3000</testTimeMargin>
+      </extraConfiguration>
+    </org.jenkinsci.plugins.xunit.XUnitBuilder>
+    <hudson.tasks.Shell>
+      <command>#!/bin/bash -eu
+
+cd /integration/build/mgmt/scripts
+
+# clean/migrate the database
+./PostgresMigration/migrate-postgres-database.sh &quot;postgres-single-node&quot; postgres secret postgres public
+
+source export-control-tool-ips.sh
+
+acceptance_job_id=$(./run-batch-job.sh acceptance-tests)
+
+./wait-for-job-to-run.sh $acceptance_job_id tester 1
+
+./wait-for-job-to-complete.sh $acceptance_job_id
+
+nomad logs $(./get-alloc-id-from-job-id.sh $acceptance_job_id)
+
+mkdir -p /var/jenkins_home/jobs/bio-id-integration/workspace/mgmt/setup/docker/AcceptanceTest/Test.Results
+
+cp -R /integration/build/mgmt/setup/docker/AcceptanceTest/Test.Results/*.jtl /var/jenkins_home/jobs/bio-id-integration/workspace/mgmt/setup/docker/AcceptanceTest/Test.Results/</command>
+    </hudson.tasks.Shell>
+  </builders>
+  <publishers>
+    <hudson.plugins.performance.PerformancePublisher plugin="performance@2.0">
+      <errorFailedThreshold>0</errorFailedThreshold>
+      <errorUnstableThreshold>0</errorUnstableThreshold>
+      <errorUnstableResponseTimeThreshold></errorUnstableResponseTimeThreshold>
+      <relativeFailedThresholdPositive>0.0</relativeFailedThresholdPositive>
+      <relativeFailedThresholdNegative>0.0</relativeFailedThresholdNegative>
+      <relativeUnstableThresholdPositive>0.0</relativeUnstableThresholdPositive>
+      <relativeUnstableThresholdNegative>0.0</relativeUnstableThresholdNegative>
+      <nthBuildNumber>0</nthBuildNumber>
+      <modeRelativeThresholds>false</modeRelativeThresholds>
+      <configType>ART</configType>
+      <modeOfThreshold>false</modeOfThreshold>
+      <failBuildIfNoResultFile>false</failBuildIfNoResultFile>
+      <compareBuildPrevious>false</compareBuildPrevious>
+      <xml></xml>
+      <modePerformancePerTestCase>true</modePerformancePerTestCase>
+      <parsers>
+        <hudson.plugins.performance.JMeterParser>
+          <glob>**/mgmt/setup/docker/AcceptanceTest/Test.Results/*.jtl</glob>
+        </hudson.plugins.performance.JMeterParser>
+      </parsers>
+      <modeThroughput>false</modeThroughput>
+      <modeEvaluation>false</modeEvaluation>
+      <ignoreFailedBuilds>false</ignoreFailedBuilds>
+      <ignoreUnstableBuilds>false</ignoreUnstableBuilds>
+      <persistConstraintLog>false</persistConstraintLog>
+    </hudson.plugins.performance.PerformancePublisher>
+    <org.jenkinsci.plugins.postbuildscript.PostBuildScript plugin="postbuildscript@0.17">
+      <buildSteps>
+        <hudson.tasks.Shell>
+          <command>#!/bin/bash -eu
+
+source /tmp/env-export.sh
+
+cd /integration/build/mgmt/scripts
+
+./stop-minimal-jobs.sh
+
+rm -rf /integration/build/*</command>
+        </hudson.tasks.Shell>
+      </buildSteps>
+      <scriptOnlyIfSuccess>false</scriptOnlyIfSuccess>
+      <scriptOnlyIfFailure>false</scriptOnlyIfFailure>
+      <markBuildUnstable>false</markBuildUnstable>
+    </org.jenkinsci.plugins.postbuildscript.PostBuildScript>
+  </publishers>
+  <buildWrappers>
+    <hudson.plugins.ws__cleanup.PreBuildCleanup plugin="ws-cleanup@0.32">
+      <deleteDirs>false</deleteDirs>
+      <cleanupParameter></cleanupParameter>
+      <externalDelete></externalDelete>
+    </hudson.plugins.ws__cleanup.PreBuildCleanup>
+  </buildWrappers>
+</project>
