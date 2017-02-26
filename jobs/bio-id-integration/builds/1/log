@@ -1,0 +1,363 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace /var/jenkins_home/jobs/bio-id-integration/workspace
+[WS-CLEANUP] Deleting project workspace...
+Cloning the remote Git repository
+Cloning repository http://zistvy90:7990/scm/tge36/bio-ident.git
+ > git init /var/jenkins_home/jobs/bio-id-integration/workspace # timeout=10
+Fetching upstream changes from http://zistvy90:7990/scm/tge36/bio-ident.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress http://zistvy90:7990/scm/tge36/bio-ident.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url http://zistvy90:7990/scm/tge36/bio-ident.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url http://zistvy90:7990/scm/tge36/bio-ident.git # timeout=10
+Fetching upstream changes from http://zistvy90:7990/scm/tge36/bio-ident.git
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress http://zistvy90:7990/scm/tge36/bio-ident.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 183e2a10431c1f97fec3a8d49f052db9e5be99f5 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 183e2a10431c1f97fec3a8d49f052db9e5be99f5
+First time build. Skipping changelog.
+[workspace] $ /bin/bash -eu /tmp/hudson1369240526668844355.sh
+Running inside a container, setting CONTAINER_PROJ_PATH as the PROJ_PATH
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/acceptance-tests.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/analytics-worker.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/backoffice-portal.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/bio-id-app.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/devops-summit-demo.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/es-client-cluster.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/es-data-cluster.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/es-master-cluster.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/es-single-node.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/fabio.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/haproxy.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/hashi-ui.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/jmeter.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/kafka-cluster.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/kafka-single-node.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/kibana.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/logstash-bio-id-app.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/logstash-docker-gelf.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/mongodb-cluster.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/mongodb-single-node.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/nginx.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/persistence-worker.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/postgres-single-node.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/redis-cluster.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/redis-single-node.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/unit-integration-tests.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/zookeeper-cluster.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/zookeeper-single-node.nomad
++ [[ ! -v CONTAINER_PROJ_PATH ]]
++ nomad run ../setup/dev-env/nomad-jobs/job-definitions/hashi-ui.nomad
+==> Monitoring evaluation "ae83c467"
+    Evaluation triggered by job "hashi-ui"
+    Allocation "b6e941bf" created: node "da0fdb7a", group "hashi-ui"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "ae83c467" finished with status "complete"
++ ./wait-for-job-to-run.sh hashi-ui hashi-ui 1
+172.22.44.241
+Job: hashi-ui, Task: hashi-ui, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 22:56:46 UTC 2017
+Job: hashi-ui, Task: hashi-ui, Requested: 1, Scheduled: 1, Dead: 0 Sun Feb 26 22:56:47 UTC 2017
++ ./wait-for-checks-to-be-green.sh hashi-ui
+172.22.44.241
+No of checks for service hashi-ui is 2. Passing is 1, sleeping for 1 sec.
+No of checks for service hashi-ui is 2. Passing is 2, sleeping for 1 sec.
+All good for service hashi-ui
++ nomad run ../setup/dev-env/nomad-jobs/job-definitions/fabio.nomad
+==> Monitoring evaluation "c535f50d"
+    Evaluation triggered by job "fabio"
+    Allocation "37acfa35" created: node "da0fdb7a", group "fabio"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "c535f50d" finished with status "complete"
++ ./wait-for-job-to-run.sh fabio fabio 1
+172.22.44.241
+Job: fabio, Task: fabio, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 22:56:53 UTC 2017
+Job: fabio, Task: fabio, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 22:56:54 UTC 2017
+Job: fabio, Task: fabio, Requested: 1, Scheduled: 1, Dead: 0 Sun Feb 26 22:56:55 UTC 2017
++ ./wait-for-checks-to-be-green.sh fabio
+172.22.44.241
+No of checks for service fabio is 2. Passing is 2, sleeping for 1 sec.
+All good for service fabio
++ nomad run ../setup/dev-env/nomad-jobs/job-definitions/es-single-node.nomad
+==> Monitoring evaluation "6b06add7"
+    Evaluation triggered by job "es-single-node"
+    Allocation "c095d41e" created: node "da0fdb7a", group "elasticsearch"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "6b06add7" finished with status "complete"
++ ./wait-for-job-to-run.sh es-single-node elasticsearch 1
+172.22.44.241
+Job: es-single-node, Task: elasticsearch, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 22:56:58 UTC 2017
+Job: es-single-node, Task: elasticsearch, Requested: 1, Scheduled: 1, Dead: 0 Sun Feb 26 22:56:59 UTC 2017
++ ./wait-for-checks-to-be-green.sh elasticsearch
+172.22.44.241
+No of checks for service elasticsearch is 5. Passing is 1, sleeping for 1 sec.
+No of checks for service elasticsearch is 5. Passing is 1, sleeping for 1 sec.
+No of checks for service elasticsearch is 5. Passing is 2, sleeping for 1 sec.
+No of checks for service elasticsearch is 5. Passing is 3, sleeping for 1 sec.
+No of checks for service elasticsearch is 5. Passing is 4, sleeping for 1 sec.
+No of checks for service elasticsearch is 5. Passing is 4, sleeping for 1 sec.
+No of checks for service elasticsearch is 5. Passing is 5, sleeping for 1 sec.
+All good for service elasticsearch
++ nomad run ../setup/dev-env/nomad-jobs/job-definitions/logstash-docker-gelf.nomad
+==> Monitoring evaluation "125f7a63"
+    Evaluation triggered by job "logstash-docker-gelf"
+    Allocation "a18cf10d" created: node "da0fdb7a", group "logstash"
+    Allocation "a18cf10d" status changed: "pending" -> "running"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "125f7a63" finished with status "complete"
++ ./wait-for-job-to-run.sh logstash-docker-gelf logstash-docker-gelf 1
+172.22.44.241
+Job: logstash-docker-gelf, Task: logstash-docker-gelf, Requested: 1, Scheduled: 1, Dead: 0 Sun Feb 26 22:57:15 UTC 2017
++ ./wait-for-checks-to-be-green.sh logstash-docker-gelf
+172.22.44.241
+No of checks for service logstash-docker-gelf is 5. Passing is 1, sleeping for 1 sec.
+No of checks for service logstash-docker-gelf is 5. Passing is 1, sleeping for 1 sec.
+No of checks for service logstash-docker-gelf is 5. Passing is 2, sleeping for 1 sec.
+No of checks for service logstash-docker-gelf is 5. Passing is 2, sleeping for 1 sec.
+No of checks for service logstash-docker-gelf is 5. Passing is 3, sleeping for 1 sec.
+No of checks for service logstash-docker-gelf is 5. Passing is 3, sleeping for 1 sec.
+No of checks for service logstash-docker-gelf is 5. Passing is 3, sleeping for 1 sec.
+No of checks for service logstash-docker-gelf is 5. Passing is 3, sleeping for 1 sec.
+No of checks for service logstash-docker-gelf is 5. Passing is 5, sleeping for 1 sec.
+All good for service logstash-docker-gelf
++ nomad run ../setup/dev-env/nomad-jobs/job-definitions/logstash-bio-id-app.nomad
+==> Monitoring evaluation "5316de91"
+    Evaluation triggered by job "logstash-bio-id-app"
+    Allocation "b91d7944" created: node "da0fdb7a", group "logstash"
+    Allocation "b91d7944" status changed: "pending" -> "running"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "5316de91" finished with status "complete"
++ ./wait-for-job-to-run.sh logstash-bio-id-app logstash-bio-id-app 1
+172.22.44.241
+Job: logstash-bio-id-app, Task: logstash-bio-id-app, Requested: 1, Scheduled: 1, Dead: 0 Sun Feb 26 22:57:35 UTC 2017
++ ./wait-for-checks-to-be-green.sh logstash-bio-id-app
+172.22.44.241
+No of checks for service logstash-bio-id-app is 5. Passing is 1, sleeping for 1 sec.
+No of checks for service logstash-bio-id-app is 5. Passing is 1, sleeping for 1 sec.
+No of checks for service logstash-bio-id-app is 5. Passing is 1, sleeping for 1 sec.
+No of checks for service logstash-bio-id-app is 5. Passing is 2, sleeping for 1 sec.
+No of checks for service logstash-bio-id-app is 5. Passing is 3, sleeping for 1 sec.
+No of checks for service logstash-bio-id-app is 5. Passing is 3, sleeping for 1 sec.
+No of checks for service logstash-bio-id-app is 5. Passing is 4, sleeping for 1 sec.
+No of checks for service logstash-bio-id-app is 5. Passing is 5, sleeping for 1 sec.
+All good for service logstash-bio-id-app
++ nomad run ../setup/dev-env/nomad-jobs/job-definitions/kibana.nomad
+==> Monitoring evaluation "d3462f6b"
+    Evaluation triggered by job "kibana"
+    Allocation "31e20c24" created: node "da0fdb7a", group "kibana"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "d3462f6b" finished with status "complete"
++ ./wait-for-job-to-run.sh kibana kibana 1
+172.22.44.241
+Job: kibana, Task: kibana, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 22:57:53 UTC 2017
+Job: kibana, Task: kibana, Requested: 1, Scheduled: 1, Dead: 0 Sun Feb 26 22:57:54 UTC 2017
++ ./wait-for-checks-to-be-green.sh kibana
+172.22.44.241
+No of checks for service kibana is 5. Passing is 1, sleeping for 1 sec.
+No of checks for service kibana is 5. Passing is 1, sleeping for 1 sec.
+No of checks for service kibana is 5. Passing is 1, sleeping for 1 sec.
+No of checks for service kibana is 5. Passing is 1, sleeping for 1 sec.
+No of checks for service kibana is 5. Passing is 5, sleeping for 1 sec.
+All good for service kibana
++ nomad run ../setup/dev-env/nomad-jobs/job-definitions/zookeeper-single-node.nomad
+==> Monitoring evaluation "a78fd4ba"
+    Evaluation triggered by job "zookeeper-single-node"
+    Allocation "51613f75" created: node "da0fdb7a", group "zookeeper"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "a78fd4ba" finished with status "complete"
++ ./wait-for-job-to-run.sh zookeeper-single-node zookeeper-single-node 1
+172.22.44.241
+Job: zookeeper-single-node, Task: zookeeper-single-node, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 22:58:05 UTC 2017
+Job: zookeeper-single-node, Task: zookeeper-single-node, Requested: 1, Scheduled: 1, Dead: 0 Sun Feb 26 22:58:06 UTC 2017
++ ./wait-for-checks-to-be-green.sh zookeeper-single-node
+172.22.44.241
+No of checks for service zookeeper-single-node is 4. Passing is 1, sleeping for 1 sec.
+No of checks for service zookeeper-single-node is 4. Passing is 3, sleeping for 1 sec.
+No of checks for service zookeeper-single-node is 4. Passing is 3, sleeping for 1 sec.
+No of checks for service zookeeper-single-node is 4. Passing is 3, sleeping for 1 sec.
+No of checks for service zookeeper-single-node is 4. Passing is 4, sleeping for 1 sec.
+All good for service zookeeper-single-node
++ nomad run ../setup/dev-env/nomad-jobs/job-definitions/kafka-single-node.nomad
+==> Monitoring evaluation "5125ddaf"
+    Evaluation triggered by job "kafka-single-node"
+    Allocation "6c951782" created: node "da0fdb7a", group "kafka"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "5125ddaf" finished with status "complete"
++ ./wait-for-job-to-run.sh kafka-single-node kafka-single-node 1
+172.22.44.241
+Job: kafka-single-node, Task: kafka-single-node, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 22:58:17 UTC 2017
+Job: kafka-single-node, Task: kafka-single-node, Requested: 1, Scheduled: 1, Dead: 0 Sun Feb 26 22:58:18 UTC 2017
++ ./wait-for-checks-to-be-green.sh kafka-single-node
+172.22.44.241
+No of checks for service kafka-single-node is 5. Passing is 1, sleeping for 1 sec.
+No of checks for service kafka-single-node is 5. Passing is 4, sleeping for 1 sec.
+No of checks for service kafka-single-node is 5. Passing is 5, sleeping for 1 sec.
+All good for service kafka-single-node
++ ./KafkaSingleNode/produce-data.sh test-topic 1000
++ ./KafkaSingleNode/consume-data.sh test-topic
+% Reached end of topic test-topic [0] at offset 1000: exiting
++ nomad run ../setup/dev-env/nomad-jobs/job-definitions/postgres-single-node.nomad
+==> Monitoring evaluation "3c557612"
+    Evaluation triggered by job "postgres-single-node"
+    Allocation "1810c27a" created: node "da0fdb7a", group "postgres"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "3c557612" finished with status "complete"
++ ./wait-for-job-to-run.sh postgres-single-node postgres-single-node 1
+172.22.44.241
+Job: postgres-single-node, Task: postgres-single-node, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 22:58:28 UTC 2017
+Job: postgres-single-node, Task: postgres-single-node, Requested: 1, Scheduled: 1, Dead: 0 Sun Feb 26 22:58:29 UTC 2017
++ ./wait-for-checks-to-be-green.sh postgres-single-node
+172.22.44.241
+No of checks for service postgres-single-node is 5. Passing is 1, sleeping for 1 sec.
+No of checks for service postgres-single-node is 5. Passing is 2, sleeping for 1 sec.
+No of checks for service postgres-single-node is 5. Passing is 3, sleeping for 1 sec.
+No of checks for service postgres-single-node is 5. Passing is 4, sleeping for 1 sec.
+No of checks for service postgres-single-node is 5. Passing is 5, sleeping for 1 sec.
+All good for service postgres-single-node
++ ./PostgresMigration/migrate-postgres-database.sh postgres-single-node postgres secret postgres public
+                                 List of databases
+   Name    |  Owner   | Encoding |  Collate   |   Ctype    |   Access privileges   
+-----------+----------+----------+------------+------------+-----------------------
+ postgres  | postgres | UTF8     | en_US.utf8 | en_US.utf8 | 
+ template0 | postgres | UTF8     | en_US.utf8 | en_US.utf8 | =c/postgres          +
+           |          |          |            |            | postgres=CTc/postgres
+ template1 | postgres | UTF8     | en_US.utf8 | en_US.utf8 | =c/postgres          +
+           |          |          |            |            | postgres=CTc/postgres
+(3 rows)
+
+Postgres is up - so kicking Flyway off now
+Flyway is cleaning the database first
+Flyway 3.2.1 by Boxfuse
+
+Database: jdbc:postgresql://172.22.44.241:5432/postgres (PostgreSQL 9.3)
+Cleaned schema "public" (execution time 00:00.018s)
+Flyway is running pending migrations -if any- on the database
+Flyway 3.2.1 by Boxfuse
+
+Database: jdbc:postgresql://172.22.44.241:5432/postgres (PostgreSQL 9.3)
+Validated 3 migrations (execution time 00:00.026s)
+Creating Metadata table: "public"."schema_version"
+Current version of schema "public": << Empty Schema >>
+Migrating schema "public" to version 0001 - InitialSetup
+WARNING: DB: identifier "FK_public.BiometricSubCategory_public.BiometricCategory_BiometricCategoryId" will be truncated to "FK_public.BiometricSubCategory_public.BiometricCategory_Biometr" (SQL State: 42622 - Error Code: 0)
+Migrating schema "public" to version 0002 - InitialData
+Migrating schema "public" to version 0003 - SampleAppSetup
+Successfully applied 3 migrations to schema "public" (execution time 00:00.197s).
++ nomad run ../setup/dev-env/nomad-jobs/job-definitions/redis-single-node.nomad
+==> Monitoring evaluation "ef58d882"
+    Evaluation triggered by job "redis-single-node"
+    Allocation "a754ace7" created: node "da0fdb7a", group "redis"
+    Allocation "a754ace7" status changed: "pending" -> "running"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "ef58d882" finished with status "complete"
++ ./wait-for-job-to-run.sh redis-single-node redis-single-node 1
+172.22.44.241
+Job: redis-single-node, Task: redis-single-node, Requested: 1, Scheduled: 1, Dead: 0 Sun Feb 26 22:58:43 UTC 2017
++ ./wait-for-checks-to-be-green.sh redis-single-node
+172.22.44.241
+No of checks for service redis-single-node is 5. Passing is 2, sleeping for 1 sec.
+No of checks for service redis-single-node is 5. Passing is 2, sleeping for 1 sec.
+No of checks for service redis-single-node is 5. Passing is 4, sleeping for 1 sec.
+No of checks for service redis-single-node is 5. Passing is 5, sleeping for 1 sec.
+All good for service redis-single-node
++ ./RedisSingleNode/import-data.sh
++ nomad run ../setup/dev-env/nomad-jobs/job-definitions/mongodb-single-node.nomad
+==> Monitoring evaluation "d03e0ae6"
+    Evaluation triggered by job "mongodb-single-node"
+    Allocation "8326efba" created: node "da0fdb7a", group "mongodb"
+    Allocation "8326efba" status changed: "pending" -> "running"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "d03e0ae6" finished with status "complete"
++ ./wait-for-job-to-run.sh mongodb-single-node mongodb-single-node 1
+172.22.44.241
+Job: mongodb-single-node, Task: mongodb-single-node, Requested: 1, Scheduled: 1, Dead: 0 Sun Feb 26 22:58:55 UTC 2017
++ ./wait-for-checks-to-be-green.sh mongodb-single-node
+172.22.44.241
+No of checks for service mongodb-single-node is 5. Passing is 3, sleeping for 1 sec.
+No of checks for service mongodb-single-node is 5. Passing is 4, sleeping for 1 sec.
+No of checks for service mongodb-single-node is 5. Passing is 4, sleeping for 1 sec.
+No of checks for service mongodb-single-node is 5. Passing is 4, sleeping for 1 sec.
+No of checks for service mongodb-single-node is 5. Passing is 5, sleeping for 1 sec.
+All good for service mongodb-single-node
++ ./MongoDbSingleNode/import-data.sh
+2017-02-26T22:59:06.816+0000	connected to: 172.22.44.241:27017
+2017-02-26T22:59:06.818+0000	dropping: test.restaurants
+2017-02-26T22:59:06.840+0000	imported 100 documents
++ nomad run ../setup/dev-env/nomad-jobs/job-definitions/backoffice-portal.nomad
+==> Monitoring evaluation "ee41c585"
+    Evaluation triggered by job "backoffice-portal"
+    Allocation "e54561ec" created: node "da0fdb7a", group "web-servers"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "ee41c585" finished with status "complete"
++ ./wait-for-job-to-run.sh backoffice-portal backoffice-portal 1
+172.22.44.241
+Job: backoffice-portal, Task: backoffice-portal, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 22:59:08 UTC 2017
+Job: backoffice-portal, Task: backoffice-portal, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 22:59:09 UTC 2017
+Job: backoffice-portal, Task: backoffice-portal, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 22:59:10 UTC 2017
+Job: backoffice-portal, Task: backoffice-portal, Requested: 1, Scheduled: 1, Dead: 0 Sun Feb 26 22:59:11 UTC 2017
++ ./wait-for-checks-to-be-green.sh backoffice-portal
+172.22.44.241
+No of checks for service backoffice-portal is 5. Passing is 1, sleeping for 1 sec.
+No of checks for service backoffice-portal is 5. Passing is 1, sleeping for 1 sec.
+No of checks for service backoffice-portal is 5. Passing is 1, sleeping for 1 sec.
+No of checks for service backoffice-portal is 5. Passing is 3, sleeping for 1 sec.
+No of checks for service backoffice-portal is 5. Passing is 4, sleeping for 1 sec.
+No of checks for service backoffice-portal is 5. Passing is 5, sleeping for 1 sec.
+All good for service backoffice-portal
++ nomad run ../setup/dev-env/nomad-jobs/job-definitions/bio-id-app.nomad
+==> Monitoring evaluation "0ac4e2f8"
+    Evaluation triggered by job "bio-id-app"
+    Allocation "c404f87d" created: node "da0fdb7a", group "bio-id-app"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "0ac4e2f8" finished with status "complete"
++ ./wait-for-job-to-run.sh bio-id-app bio-id-app 1
+172.22.44.241
+Job: bio-id-app, Task: bio-id-app, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 22:59:25 UTC 2017
+Job: bio-id-app, Task: bio-id-app, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 22:59:26 UTC 2017
+Job: bio-id-app, Task: bio-id-app, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 22:59:27 UTC 2017
+Job: bio-id-app, Task: bio-id-app, Requested: 1, Scheduled: 1, Dead: 0 Sun Feb 26 22:59:28 UTC 2017
++ ./wait-for-checks-to-be-green.sh bio-id-app
+172.22.44.241
+No of checks for service bio-id-app is 5. Passing is 1, sleeping for 1 sec.
+No of checks for service bio-id-app is 5. Passing is 3, sleeping for 1 sec.
+No of checks for service bio-id-app is 5. Passing is 4, sleeping for 1 sec.
+No of checks for service bio-id-app is 5. Passing is 4, sleeping for 1 sec.
+No of checks for service bio-id-app is 5. Passing is 5, sleeping for 1 sec.
+All good for service bio-id-app
++ nomad run ../setup/dev-env/nomad-jobs/job-definitions/persistence-worker.nomad
+==> Monitoring evaluation "dada2d67"
+    Evaluation triggered by job "persistence-worker"
+    Allocation "dd892846" created: node "da0fdb7a", group "persistence-worker"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "dada2d67" finished with status "complete"
++ ./wait-for-job-to-run.sh persistence-worker persistence-worker 1
+172.22.44.241
+Job: persistence-worker, Task: persistence-worker, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 22:59:39 UTC 2017
+Job: persistence-worker, Task: persistence-worker, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 22:59:40 UTC 2017
+Job: persistence-worker, Task: persistence-worker, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 22:59:41 UTC 2017
+Job: persistence-worker, Task: persistence-worker, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 22:59:42 UTC 2017
+Job: persistence-worker, Task: persistence-worker, Requested: 1, Scheduled: 1, Dead: 0 Sun Feb 26 22:59:43 UTC 2017
++ ./wait-for-checks-to-be-green.sh persistence-worker
+172.22.44.241
+No of checks for service persistence-worker is 4. Passing is 2, sleeping for 1 sec.
+No of checks for service persistence-worker is 4. Passing is 2, sleeping for 1 sec.
+No of checks for service persistence-worker is 4. Passing is 3, sleeping for 1 sec.
+No of checks for service persistence-worker is 4. Passing is 3, sleeping for 1 sec.
+No of checks for service persistence-worker is 4. Passing is 3, sleeping for 1 sec.
+No of checks for service persistence-worker is 4. Passing is 4, sleeping for 1 sec.
+All good for service persistence-worker
++ nomad run ../setup/dev-env/nomad-jobs/job-definitions/analytics-worker.nomad
+==> Monitoring evaluation "c9168e96"
+    Evaluation triggered by job "analytics-worker"
+    Allocation "1f88ac60" created: node "da0fdb7a", group "analytics-worker"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "c9168e96" finished with status "complete"
++ ./wait-for-job-to-run.sh analytics-worker analytics-worker 1
+172.22.44.241
+Job: analytics-worker, Task: analytics-worker, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 22:59:56 UTC 2017
+Job: analytics-worker, Task: analytics-worker, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 22:59:57 UTC 2017
+Job: analytics-worker, Task: analytics-worker, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 22:59:58 UTC 2017
+Job: analytics-worker, Task: analytics-worker, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 22:59:59 UTC 2017
