@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="2315" it="0" lt="2315" ct="71" ts="1488150107702" s="true" lb="Get Token" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="912" sby="305" ng="1" na="1">
+  <assertionResult>
+    <name>Should Return 200 Response</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Should Have a Valid Bearer Token</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage>Undetermined failure</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="4" it="0" lt="4" ct="2" ts="1488150110120" s="false" lb="Get Device HeartBeat Details" rc="502" rm="Bad Gateway" tn="Thread Group 1-1" dt="text" by="125" sby="750" ng="1" na="1">
+  <assertionResult>
+    <name>Should Return 200 Response</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/</failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Response was null</failureMessage>
+  </assertionResult>
+</httpSample>
+
+</testResults>

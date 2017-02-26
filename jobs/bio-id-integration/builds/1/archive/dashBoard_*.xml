@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<results>
+<absoluteDefinition>
+	<unstable>0</unstable>
+	<failed>0</failed>
+	<calculated>100.0</calculated>
+</absoluteDefinition>
+<average>
+	<Get Token>
+		<currentBuildAvg>83</currentBuildAvg>
+	</Get Token>
+</average>
+<median>
+	<Get Token>
+		<currentBuildMed>83</currentBuildMed>
+	</Get Token>
+</median>
+<percentile>
+	<Get Token>
+		<currentBuild90Line>83</currentBuild90Line>
+	</Get Token>
+</percentile>
+</results>

@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<build>
+  <actions>
+    <hudson.model.CauseAction>
+      <causeBag class="linked-hash-map">
+        <entry>
+          <hudson.model.Cause_-UserIdCause/>
+          <int>1</int>
+        </entry>
+      </causeBag>
+    </hudson.model.CauseAction>
+    <hudson.plugins.git.util.BuildData plugin="git@3.0.1">
+      <buildsByBranchName>
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <hudson.plugins.git.util.Build>
+            <marked plugin="git-client@2.2.1">
+              <sha1>183e2a10431c1f97fec3a8d49f052db9e5be99f5</sha1>
+              <branches class="list">
+                <hudson.plugins.git.Branch>
+                  <sha1 reference="../../../sha1"/>
+                  <name>refs/remotes/origin/master</name>
+                </hudson.plugins.git.Branch>
+              </branches>
+            </marked>
+            <revision reference="../marked"/>
+            <hudsonBuildNumber>1</hudsonBuildNumber>
+          </hudson.plugins.git.util.Build>
+        </entry>
+      </buildsByBranchName>
+      <lastBuild reference="../buildsByBranchName/entry/hudson.plugins.git.util.Build"/>
+      <remoteUrls>
+        <string>http://zistvy90:7990/scm/tge36/bio-ident.git</string>
+      </remoteUrls>
+    </hudson.plugins.git.util.BuildData>
+    <hudson.plugins.git.GitTagAction plugin="git@3.0.1">
+      <tags class="hudson.util.CopyOnWriteMap$Tree">
+        <entry>
+          <string>refs/remotes/origin/master</string>
+          <list/>
+        </entry>
+      </tags>
+      <ws>/var/jenkins_home/jobs/bio-id-integration/workspace</ws>
+    </hudson.plugins.git.GitTagAction>
+    <hudson.scm.SCMRevisionState_-None/>
+    <hudson.tasks.junit.TestResultAction plugin="junit@1.19">
+      <descriptions class="concurrent-hash-map"/>
+      <failCount>0</failCount>
+      <skipCount>0</skipCount>
+      <totalCount>77</totalCount>
+      <testData/>
+    </hudson.tasks.junit.TestResultAction>
+    <hudson.plugins.performance.PerformanceBuildAction plugin="performance@2.0">
+      <build class="build" reference="../../.."/>
+      <parsers>
+        <hudson.plugins.performance.JMeterParser>
+          <glob>**/mgmt/setup/docker/AcceptanceTest/Test.Results/*.jtl</glob>
+        </hudson.plugins.performance.JMeterParser>
+      </parsers>
+    </hudson.plugins.performance.PerformanceBuildAction>
+    <hudson.plugins.performance.PerformanceBuildAction plugin="performance@2.0">
+      <build class="build" reference="../../.."/>
+      <parsers reference="../../hudson.plugins.performance.PerformanceBuildAction/parsers"/>
+    </hudson.plugins.performance.PerformanceBuildAction>
+  </actions>
+  <queueId>1</queueId>
+  <timestamp>1488149804266</timestamp>
+  <startTime>1488149804272</startTime>
+  <result>FAILURE</result>
+  <duration>355767</duration>
+  <charset>UTF-8</charset>
+  <keepLog>false</keepLog>
+  <builtOn></builtOn>
+  <workspace>/var/jenkins_home/jobs/bio-id-integration/workspace</workspace>
+  <hudsonVersion>2.19.4</hudsonVersion>
+  <scm class="hudson.plugins.git.GitChangeLogParser" plugin="git@3.0.1">
+    <authorOrCommitter>false</authorOrCommitter>
+  </scm>
+  <culprits class="com.google.common.collect.EmptyImmutableSortedSet"/>
+</build>

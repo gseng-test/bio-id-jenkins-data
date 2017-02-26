@@ -361,3 +361,1016 @@ Job: analytics-worker, Task: analytics-worker, Requested: 1, Scheduled: 0, Dead:
 Job: analytics-worker, Task: analytics-worker, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 22:59:57 UTC 2017
 Job: analytics-worker, Task: analytics-worker, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 22:59:58 UTC 2017
 Job: analytics-worker, Task: analytics-worker, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 22:59:59 UTC 2017
+Job: analytics-worker, Task: analytics-worker, Requested: 1, Scheduled: 1, Dead: 0 Sun Feb 26 23:00:01 UTC 2017
++ ./wait-for-checks-to-be-green.sh analytics-worker
+172.22.44.241
+No of checks for service analytics-worker is 4. Passing is 1, sleeping for 1 sec.
+No of checks for service analytics-worker is 4. Passing is 1, sleeping for 1 sec.
+No of checks for service analytics-worker is 4. Passing is 1, sleeping for 1 sec.
+No of checks for service analytics-worker is 4. Passing is 3, sleeping for 1 sec.
+No of checks for service analytics-worker is 4. Passing is 4, sleeping for 1 sec.
+All good for service analytics-worker
+++ consul kv get conf/ext/lb-base-fqdn
+++ tr -d '\n'
++ LB_BASE_FQDN=local
++ [[ local = \l\o\c\a\l ]]
++ nomad run ../setup/dev-env/nomad-jobs/job-definitions/haproxy.nomad
+==> Monitoring evaluation "e6f46933"
+    Evaluation triggered by job "haproxy"
+    Allocation "db5f8a85" created: node "da0fdb7a", group "web"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "e6f46933" finished with status "complete"
++ ./wait-for-job-to-run.sh haproxy haproxy 1
+172.22.44.241
+Job: haproxy, Task: haproxy, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 23:00:12 UTC 2017
+Job: haproxy, Task: haproxy, Requested: 1, Scheduled: 1, Dead: 0 Sun Feb 26 23:00:13 UTC 2017
++ ./wait-for-checks-to-be-green.sh haproxy
+172.22.44.241
+No of checks for service haproxy is 4. Passing is 1, sleeping for 1 sec.
+No of checks for service haproxy is 4. Passing is 2, sleeping for 1 sec.
+No of checks for service haproxy is 4. Passing is 2, sleeping for 1 sec.
+No of checks for service haproxy is 4. Passing is 3, sleeping for 1 sec.
+No of checks for service haproxy is 4. Passing is 4, sleeping for 1 sec.
+All good for service haproxy
+[workspace] $ /bin/bash -eu /tmp/hudson2311386161560883330.sh
+172.22.44.241
+172.22.44.241
+Job: unit-integration-tests-1488150024, Task: tester, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 23:00:24 UTC 2017
+Job: unit-integration-tests-1488150024, Task: tester, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 23:00:25 UTC 2017
+Job: unit-integration-tests-1488150024, Task: tester, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 23:00:26 UTC 2017
+Job: unit-integration-tests-1488150024, Task: tester, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 23:00:27 UTC 2017
+Job: unit-integration-tests-1488150024, Task: tester, Requested: 1, Scheduled: 1, Dead: 0 Sun Feb 26 23:00:28 UTC 2017
+Job: unit-integration-tests-1488150024 is still running, Sun Feb 26 23:00:29 UTC 2017
+Job: unit-integration-tests-1488150024 is still running, Sun Feb 26 23:00:30 UTC 2017
+Job: unit-integration-tests-1488150024 is still running, Sun Feb 26 23:00:31 UTC 2017
+Job: unit-integration-tests-1488150024 is still running, Sun Feb 26 23:00:32 UTC 2017
+Job: unit-integration-tests-1488150024 is still running, Sun Feb 26 23:00:33 UTC 2017
+Job: unit-integration-tests-1488150024 is still running, Sun Feb 26 23:00:34 UTC 2017
+Job: unit-integration-tests-1488150024 is still running, Sun Feb 26 23:00:35 UTC 2017
+Job: unit-integration-tests-1488150024 is still running, Sun Feb 26 23:00:36 UTC 2017
+Job: unit-integration-tests-1488150024 is still running, Sun Feb 26 23:00:37 UTC 2017
+Job: unit-integration-tests-1488150024 is still running, Sun Feb 26 23:00:38 UTC 2017
+Job: unit-integration-tests-1488150024 is still running, Sun Feb 26 23:00:39 UTC 2017
+Job: unit-integration-tests-1488150024 is still running, Sun Feb 26 23:00:40 UTC 2017
+Job: unit-integration-tests-1488150024 is still running, Sun Feb 26 23:00:41 UTC 2017
+Job: unit-integration-tests-1488150024 is still running, Sun Feb 26 23:00:42 UTC 2017
+Job: unit-integration-tests-1488150024 is still running, Sun Feb 26 23:00:43 UTC 2017
+Job: unit-integration-tests-1488150024 is still running, Sun Feb 26 23:00:44 UTC 2017
+Job: unit-integration-tests-1488150024 is still running, Sun Feb 26 23:00:45 UTC 2017
+Job: unit-integration-tests-1488150024 is still running, Sun Feb 26 23:00:46 UTC 2017
+Job: unit-integration-tests-1488150024 is still running, Sun Feb 26 23:00:47 UTC 2017
+Job: unit-integration-tests-1488150024 is still running, Sun Feb 26 23:00:48 UTC 2017
+Job: unit-integration-tests-1488150024 is still running, Sun Feb 26 23:00:49 UTC 2017
+Job: unit-integration-tests-1488150024 is still running, Sun Feb 26 23:00:50 UTC 2017
+Job: unit-integration-tests-1488150024 is still running, Sun Feb 26 23:00:51 UTC 2017
+Job: unit-integration-tests-1488150024 is still running, Sun Feb 26 23:00:52 UTC 2017
+Job: unit-integration-tests-1488150024 is still running, Sun Feb 26 23:00:53 UTC 2017
+Job: unit-integration-tests-1488150024 is still running, Sun Feb 26 23:00:54 UTC 2017
+Job: unit-integration-tests-1488150024 is still running, Sun Feb 26 23:00:55 UTC 2017
+Job: unit-integration-tests-1488150024 is still running, Sun Feb 26 23:00:56 UTC 2017
+Job: unit-integration-tests-1488150024 is still running, Sun Feb 26 23:00:57 UTC 2017
+Job: unit-integration-tests-1488150024 is still running, Sun Feb 26 23:00:58 UTC 2017
+Job: unit-integration-tests-1488150024 is still running, Sun Feb 26 23:01:00 UTC 2017
+Job: unit-integration-tests-1488150024 is still running, Sun Feb 26 23:01:01 UTC 2017
+Job: unit-integration-tests-1488150024 is still running, Sun Feb 26 23:01:02 UTC 2017
+Job: unit-integration-tests-1488150024 is still running, Sun Feb 26 23:01:03 UTC 2017
+Job: unit-integration-tests-1488150024 is still running, Sun Feb 26 23:01:04 UTC 2017
+Job: unit-integration-tests-1488150024 is still running, Sun Feb 26 23:01:05 UTC 2017
+Job: unit-integration-tests-1488150024 is still running, Sun Feb 26 23:01:06 UTC 2017
+Job: unit-integration-tests-1488150024 is still running, Sun Feb 26 23:01:07 UTC 2017
+Job: unit-integration-tests-1488150024 is still running, Sun Feb 26 23:01:08 UTC 2017
+Job: unit-integration-tests-1488150024 is still running, Sun Feb 26 23:01:09 UTC 2017
+Job: unit-integration-tests-1488150024 is still running, Sun Feb 26 23:01:10 UTC 2017
+Job: unit-integration-tests-1488150024 is still running, Sun Feb 26 23:01:11 UTC 2017
+Job: unit-integration-tests-1488150024 is still running, Sun Feb 26 23:01:12 UTC 2017
+Job: unit-integration-tests-1488150024 is still running, Sun Feb 26 23:01:13 UTC 2017
+Job: unit-integration-tests-1488150024 is still running, Sun Feb 26 23:01:14 UTC 2017
+Job: unit-integration-tests-1488150024 is still running, Sun Feb 26 23:01:15 UTC 2017
+Job: unit-integration-tests-1488150024 is complete now, Sun Feb 26 23:01:16 UTC 2017
+complete
+TODO: gseng - change this
+Sleeping for 10 seconds to wait Consul to kick off and update config
+First updating the config file based on the service values from Consul
+﻿orm:
+  type: Ef
+
+database:
+  ## Postgres, MsSql
+  type: Postgres 
+  ## ReadCommitted, Snapshot, Serializable
+  defaultIsolationLevel: ReadCommitted
+
+postgres:
+  ip: 172.22.44.241
+  port: 5432
+
+msSql:
+
+logging:
+  ## Log4Net, LogStash
+  type: Log4Net
+
+logStash:
+  method: Tcp 
+  tcpEndpointIp: 172.22.44.241
+  tcpEndpointPort: 5000
+  numberOfTasks: 5
+
+distributedCacheProvider:
+  ## None, Redis
+  type: None
+
+miniProfilerSql:
+  enabled: false
+
+redisNodes:
+  nodes:
+    - ip: 172.22.44.241
+      port: 6379
+
+kafkaNodes:
+  nodes:
+    - ip: 172.22.44.241
+      port: 9092
+
+kafkaTopics:
+  topics:
+    - name: SampleApp
+      noOfPartitions: 4
+
+mongoReplicas:
+  replicas:
+    - ip: 172.22.44.241
+      port: 27017
+
+socialLogins:
+  - type: Facebook
+    defaultUserRole: User
+    appId: 1114776728606670
+    appSecret: 8e1cdc36ea0523c8c097dc825251d931
+    tokenExpire: 6
+The files to test are: Common.IntegrationTest.dll
+Common.UnitTest.dll
+xUnit.net Console Runner (64-bit .NET 4.0.30319.42000)
+  Discovering: Common.IntegrationTest
+  Discovered:  Common.IntegrationTest
+  Starting:    Common.IntegrationTest
+  Finished:    Common.IntegrationTest
+=== TEST EXECUTION SUMMARY ===
+   Common.IntegrationTest  Total: 77, Errors: 0, Failed: 0, Skipped: 0, Time: 31.742s
+xUnit.net Console Runner (64-bit .NET 4.0.30319.42000)
+  Discovering: Common.UnitTest
+  Discovered:  Common.UnitTest
+=== TEST EXECUTION SUMMARY ===
+   Common.UnitTest.dll  Total: 0
+[xUnit] [INFO] - Starting to record.
+[xUnit] [INFO] - Processing xUnit.Net-v2 (default)
+[xUnit] [INFO] - [xUnit.Net-v2 (default)] - 2 test report file(s) were found with the pattern '**/mgmt/setup/docker/UnitIntegrationTest/Test.Results/*.xml' relative to '/var/jenkins_home/jobs/bio-id-integration/workspace' for the testing framework 'xUnit.Net-v2 (default)'.
+[xUnit] [INFO] - Check 'Failed Tests' threshold.
+[xUnit] [INFO] - Check 'Skipped Tests' threshold.
+[xUnit] [INFO] - Setting the build status to SUCCESS
+[xUnit] [INFO] - Stopping recording.
+Build step 'Process xUnit test result report' changed build result to SUCCESS
+[workspace] $ /bin/bash -eu /tmp/hudson4643543691488950500.sh
+                                 List of databases
+   Name    |  Owner   | Encoding |  Collate   |   Ctype    |   Access privileges   
+-----------+----------+----------+------------+------------+-----------------------
+ postgres  | postgres | UTF8     | en_US.utf8 | en_US.utf8 | 
+ template0 | postgres | UTF8     | en_US.utf8 | en_US.utf8 | =c/postgres          +
+           |          |          |            |            | postgres=CTc/postgres
+ template1 | postgres | UTF8     | en_US.utf8 | en_US.utf8 | =c/postgres          +
+           |          |          |            |            | postgres=CTc/postgres
+(3 rows)
+
+Postgres is up - so kicking Flyway off now
+Flyway is cleaning the database first
+Flyway 3.2.1 by Boxfuse
+
+Database: jdbc:postgresql://172.22.44.241:5432/postgres (PostgreSQL 9.3)
+Cleaned schema "public" (execution time 00:00.041s)
+Flyway is running pending migrations -if any- on the database
+Flyway 3.2.1 by Boxfuse
+
+Database: jdbc:postgresql://172.22.44.241:5432/postgres (PostgreSQL 9.3)
+Validated 3 migrations (execution time 00:00.025s)
+Creating Metadata table: "public"."schema_version"
+Current version of schema "public": << Empty Schema >>
+Migrating schema "public" to version 0001 - InitialSetup
+WARNING: DB: identifier "FK_public.BiometricSubCategory_public.BiometricCategory_BiometricCategoryId" will be truncated to "FK_public.BiometricSubCategory_public.BiometricCategory_Biometr" (SQL State: 42622 - Error Code: 0)
+Migrating schema "public" to version 0002 - InitialData
+Migrating schema "public" to version 0003 - SampleAppSetup
+Successfully applied 3 migrations to schema "public" (execution time 00:00.232s).
+172.22.44.241
+172.22.44.241
+Job: acceptance-tests-1488150078, Task: tester, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 23:01:18 UTC 2017
+Job: acceptance-tests-1488150078, Task: tester, Requested: 1, Scheduled: 1, Dead: 0 Sun Feb 26 23:01:19 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:01:20 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:01:21 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:01:22 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:01:23 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:01:24 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:01:25 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:01:26 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:01:27 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:01:28 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:01:29 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:01:30 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:01:31 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:01:32 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:01:33 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:01:34 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:01:36 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:01:37 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:01:38 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:01:39 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:01:40 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:01:41 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:01:42 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:01:43 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:01:44 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:01:45 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:01:46 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:01:47 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:01:48 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:01:49 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:01:50 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:01:51 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:01:52 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:01:53 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:01:54 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:01:55 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:01:56 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:01:57 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:01:58 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:01:59 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:02:00 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:02:01 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:02:02 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:02:03 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:02:04 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:02:05 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:02:06 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:02:07 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:02:08 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:02:09 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:02:10 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:02:11 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:02:12 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:02:13 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:02:14 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:02:15 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:02:16 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:02:17 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:02:18 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:02:19 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:02:20 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:02:21 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:02:22 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:02:24 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:02:25 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:02:26 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:02:27 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:02:28 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:02:29 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:02:30 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:02:31 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:02:32 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:02:33 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:02:34 UTC 2017
+Job: acceptance-tests-1488150078 is still running, Sun Feb 26 23:02:35 UTC 2017
+Job: acceptance-tests-1488150078 is complete now, Sun Feb 26 23:02:36 UTC 2017
+failed
+Targetting the ip: bio-id-backoffice.local and port: 80
+Running test: /Acceptance.Tests/IoTSample/RegisterDevice.jmx output to: /Test.Results/RegisterDevice.jmx.jtl 
+Return code from JMeter was 0
+Test /Acceptance.Tests/IoTSample/RegisterDevice.jmx resulted in with Writing log file to: /jmeter/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Acceptance.Tests/IoTSample/RegisterDevice.jmx
+Starting the test @ Sun Feb 26 23:01:19 UTC 2017 (1488150079878)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary =      3 in 00:00:03 =    1.0/s Avg:   874 Min:     1 Max:  2206 Err:     0 (0.00%)
+Tidying up ...    @ Sun Feb 26 23:01:22 UTC 2017 (1488150082947)
+... end of run
+Running test: /Acceptance.Tests/IoTSample/Register10DevicesSend10Heartbeats.jmx output to: /Test.Results/Register10DevicesSend10Heartbeats.jmx.jtl 
+Return code from JMeter was 0
+Test /Acceptance.Tests/IoTSample/Register10DevicesSend10Heartbeats.jmx resulted in with Writing log file to: /jmeter/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Acceptance.Tests/IoTSample/Register10DevicesSend10Heartbeats.jmx
+Starting the test @ Sun Feb 26 23:01:24 UTC 2017 (1488150084078)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary +     76 in 00:00:06 =   13.0/s Avg:    53 Min:     0 Max:   139 Err:     0 (0.00%) Active: 1 Started: 6 Finished: 5
+summary +     54 in 00:00:04 =   13.4/s Avg:    46 Min:     0 Max:    83 Err:     0 (0.00%) Active: 0 Started: 10 Finished: 10
+summary =    130 in 00:00:10 =   13.2/s Avg:    50 Min:     0 Max:   139 Err:     0 (0.00%)
+Tidying up ...    @ Sun Feb 26 23:01:34 UTC 2017 (1488150094064)
+... end of run
+Running test: /Acceptance.Tests/IoTSample/SetHeartBeat50Times.jmx output to: /Test.Results/SetHeartBeat50Times.jmx.jtl 
+Return code from JMeter was 0
+Test /Acceptance.Tests/IoTSample/SetHeartBeat50Times.jmx resulted in with Writing log file to: /jmeter/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Acceptance.Tests/IoTSample/SetHeartBeat50Times.jmx
+Starting the test @ Sun Feb 26 23:01:35 UTC 2017 (1488150095229)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary +      1 in 00:00:00 =    2.5/s Avg:   130 Min:   130 Max:   130 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+summary +     52 in 00:00:03 =   18.8/s Avg:    50 Min:     1 Max:    93 Err:     0 (0.00%) Active: 0 Started: 1 Finished: 1
+summary =     53 in 00:00:03 =   16.7/s Avg:    51 Min:     1 Max:   130 Err:     0 (0.00%)
+Tidying up ...    @ Sun Feb 26 23:01:38 UTC 2017 (1488150098543)
+... end of run
+Running test: /Acceptance.Tests/IoTSample/GetHeartBeatDetails.jmx output to: /Test.Results/GetHeartBeatDetails.jmx.jtl 
+Return code from JMeter was 0
+Test /Acceptance.Tests/IoTSample/GetHeartBeatDetails.jmx resulted in with Writing log file to: /jmeter/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Acceptance.Tests/IoTSample/GetHeartBeatDetails.jmx
+Starting the test @ Sun Feb 26 23:01:39 UTC 2017 (1488150099691)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary =      1 in 00:00:00 =    2.7/s Avg:    84 Min:    84 Max:    84 Err:     1 (100.00%)
+Tidying up ...    @ Sun Feb 26 23:01:40 UTC 2017 (1488150100209)
+... end of run
+An error has been detected in running the test /Acceptance.Tests/IoTSample/GetHeartBeatDetails.jmx
+Output is: 
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="84" it="0" lt="84" ct="60" ts="1488150100057" s="false" lb="Get Token" rc="404" rm="Not Found" tn="Get HeartBeat Details 1-1" dt="text" by="300" sby="288" ng="1" na="1">
+  <assertionResult>
+    <name>Should Return 200 Response</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/</failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Should Have a Valid Bearer Token</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Invalid token length: </failureMessage>
+  </assertionResult>
+</httpSample>
+
+</testResults>
+Running test: /Acceptance.Tests/IoTSample/SetHeartBeat.jmx output to: /Test.Results/SetHeartBeat.jmx.jtl 
+Return code from JMeter was 0
+Test /Acceptance.Tests/IoTSample/SetHeartBeat.jmx resulted in with Writing log file to: /jmeter/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Acceptance.Tests/IoTSample/SetHeartBeat.jmx
+Starting the test @ Sun Feb 26 23:01:41 UTC 2017 (1488150101330)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary =      1 in 00:00:00 =    2.5/s Avg:    79 Min:    79 Max:    79 Err:     1 (100.00%)
+Tidying up ...    @ Sun Feb 26 23:01:41 UTC 2017 (1488150101994)
+... end of run
+An error has been detected in running the test /Acceptance.Tests/IoTSample/SetHeartBeat.jmx
+Output is: 
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="79" it="0" lt="79" ct="55" ts="1488150101843" s="false" lb="Get Token" rc="404" rm="Not Found" tn="HeartBeat Test 1-1" dt="text" by="300" sby="288" ng="1" na="1">
+  <assertionResult>
+    <name>Should Return 200 Response</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/</failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Should Have a Valid Bearer Token</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Invalid token length: </failureMessage>
+  </assertionResult>
+</httpSample>
+
+</testResults>
+Running test: /Acceptance.Tests/IoTSample/GetHeartBeatDetailsNormalized.jmx output to: /Test.Results/GetHeartBeatDetailsNormalized.jmx.jtl 
+Return code from JMeter was 0
+Test /Acceptance.Tests/IoTSample/GetHeartBeatDetailsNormalized.jmx resulted in with Writing log file to: /jmeter/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Acceptance.Tests/IoTSample/GetHeartBeatDetailsNormalized.jmx
+Starting the test @ Sun Feb 26 23:01:43 UTC 2017 (1488150103107)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary =      1 in 00:00:00 =    2.6/s Avg:   103 Min:   103 Max:   103 Err:     1 (100.00%)
+Tidying up ...    @ Sun Feb 26 23:01:43 UTC 2017 (1488150103617)
+... end of run
+An error has been detected in running the test /Acceptance.Tests/IoTSample/GetHeartBeatDetailsNormalized.jmx
+Output is: 
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="103" it="0" lt="103" ct="71" ts="1488150103429" s="false" lb="Get Token" rc="404" rm="Not Found" tn="HeartBeat Test 1-1" dt="text" by="300" sby="288" ng="1" na="1">
+  <assertionResult>
+    <name>Should Return 200 Response</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/</failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Should Have a Valid Bearer Token</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Invalid token length: </failureMessage>
+  </assertionResult>
+</httpSample>
+
+</testResults>
+Running test: /Acceptance.Tests/IoTSample/DeviceAvarageAnalytics.jmx output to: /Test.Results/DeviceAvarageAnalytics.jmx.jtl 
+Return code from JMeter was 0
+Test /Acceptance.Tests/IoTSample/DeviceAvarageAnalytics.jmx resulted in with Writing log file to: /jmeter/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Acceptance.Tests/IoTSample/DeviceAvarageAnalytics.jmx
+Starting the test @ Sun Feb 26 23:01:44 UTC 2017 (1488150104955)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary =      1 in 00:00:01 =    1.6/s Avg:   154 Min:   154 Max:   154 Err:     1 (100.00%)
+Tidying up ...    @ Sun Feb 26 23:01:45 UTC 2017 (1488150105756)
+... end of run
+An error has been detected in running the test /Acceptance.Tests/IoTSample/DeviceAvarageAnalytics.jmx
+Output is: 
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="154" it="0" lt="154" ct="105" ts="1488150105491" s="false" lb="Get Token" rc="404" rm="Not Found" tn="Thread Group 1-1" dt="text" by="300" sby="305" ng="1" na="1">
+  <assertionResult>
+    <name>Should Return 200 Response</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/</failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Should Have a Valid Bearer Token</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Invalid token length: </failureMessage>
+  </assertionResult>
+</httpSample>
+
+</testResults>
+Running test: /Acceptance.Tests/IoTSample/DeviceHeartBeatDetails.jmx output to: /Test.Results/DeviceHeartBeatDetails.jmx.jtl 
+Return code from JMeter was 0
+Test /Acceptance.Tests/IoTSample/DeviceHeartBeatDetails.jmx resulted in with Writing log file to: /jmeter/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Acceptance.Tests/IoTSample/DeviceHeartBeatDetails.jmx
+Starting the test @ Sun Feb 26 23:01:47 UTC 2017 (1488150107144)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary =      2 in 00:00:03 =    0.7/s Avg:  1159 Min:     4 Max:  2315 Err:     1 (50.00%)
+Tidying up ...    @ Sun Feb 26 23:01:50 UTC 2017 (1488150110130)
+... end of run
+An error has been detected in running the test /Acceptance.Tests/IoTSample/DeviceHeartBeatDetails.jmx
+Output is: 
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="2315" it="0" lt="2315" ct="71" ts="1488150107702" s="true" lb="Get Token" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="912" sby="305" ng="1" na="1">
+  <assertionResult>
+    <name>Should Return 200 Response</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Should Have a Valid Bearer Token</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage>Undetermined failure</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="4" it="0" lt="4" ct="2" ts="1488150110120" s="false" lb="Get Device HeartBeat Details" rc="502" rm="Bad Gateway" tn="Thread Group 1-1" dt="text" by="125" sby="750" ng="1" na="1">
+  <assertionResult>
+    <name>Should Return 200 Response</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[502]]]
+
+****** comparison: [[[200]]]
+
+/</failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Response was null</failureMessage>
+  </assertionResult>
+</httpSample>
+
+</testResults>
+Running test: /Acceptance.Tests/Account/UserLoginLogout.jmx output to: /Test.Results/UserLoginLogout.jmx.jtl 
+Return code from JMeter was 0
+Test /Acceptance.Tests/Account/UserLoginLogout.jmx resulted in with Writing log file to: /jmeter/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Acceptance.Tests/Account/UserLoginLogout.jmx
+Starting the test @ Sun Feb 26 23:01:51 UTC 2017 (1488150111341)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary =      1 in 00:00:00 =    2.2/s Avg:    83 Min:    83 Max:    83 Err:     1 (100.00%)
+Tidying up ...    @ Sun Feb 26 23:01:51 UTC 2017 (1488150111910)
+... end of run
+An error has been detected in running the test /Acceptance.Tests/Account/UserLoginLogout.jmx
+Output is: 
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="83" it="0" lt="83" ct="58" ts="1488150111751" s="false" lb="Get Token" rc="404" rm="Not Found" tn="Biometric Identification User Login Logout 1-1" dt="text" by="300" sby="288" ng="1" na="1">
+  <assertionResult>
+    <name>Should Return 200 Response</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/</failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Should Have a Valid Bearer Token</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Invalid token length: </failureMessage>
+  </assertionResult>
+</httpSample>
+
+</testResults>
+Running test: /Acceptance.Tests/Account/RegisterUserWithModelStateError.jmx output to: /Test.Results/RegisterUserWithModelStateError.jmx.jtl 
+Return code from JMeter was 0
+Test /Acceptance.Tests/Account/RegisterUserWithModelStateError.jmx resulted in with Writing log file to: /jmeter/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Acceptance.Tests/Account/RegisterUserWithModelStateError.jmx
+Starting the test @ Sun Feb 26 23:01:53 UTC 2017 (1488150113052)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary =      1 in 00:00:00 =    3.0/s Avg:   120 Min:   120 Max:   120 Err:     1 (100.00%)
+Tidying up ...    @ Sun Feb 26 23:01:53 UTC 2017 (1488150113505)
+... end of run
+An error has been detected in running the test /Acceptance.Tests/Account/RegisterUserWithModelStateError.jmx
+Output is: 
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="120" it="0" lt="120" ct="79" ts="1488150113357" s="false" lb="Register User With Invalid UserName" rc="404" rm="Not Found" tn="User Registration With Model State Error 1-1" dt="text" by="300" sby="341" ng="1" na="1">
+  <assertionResult>
+    <name>BeanShell Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+
+</testResults>
+Running test: /Acceptance.Tests/Account/TokenHashPersistenceControl.jmx output to: /Test.Results/TokenHashPersistenceControl.jmx.jtl 
+Return code from JMeter was 0
+Test /Acceptance.Tests/Account/TokenHashPersistenceControl.jmx resulted in with Writing log file to: /jmeter/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Acceptance.Tests/Account/TokenHashPersistenceControl.jmx
+Starting the test @ Sun Feb 26 23:01:54 UTC 2017 (1488150114840)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary =      1 in 00:00:00 =    2.2/s Avg:   114 Min:   114 Max:   114 Err:     1 (100.00%)
+Tidying up ...    @ Sun Feb 26 23:01:55 UTC 2017 (1488150115699)
+... end of run
+An error has been detected in running the test /Acceptance.Tests/Account/TokenHashPersistenceControl.jmx
+Output is: 
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="114" it="0" lt="114" ct="80" ts="1488150115504" s="false" lb="Get Token" rc="404" rm="Not Found" tn="Thread Group 1-1" dt="text" by="300" sby="288" ng="1" na="1">
+  <assertionResult>
+    <name>Should Return 200 Response</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Test failed: code expected to equal /
+
+****** received  : [[[404]]]
+
+****** comparison: [[[200]]]
+
+/</failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Should Have a Valid Bearer Token</name>
+    <failure>true</failure>
+    <error>false</error>
+    <failureMessage>Invalid token length: </failureMessage>
+  </assertionResult>
+</httpSample>
+
+</testResults>
+Running test: /Acceptance.Tests/Account/Fragments/FragmentGetToken.jmx output to: /Test.Results/FragmentGetToken.jmx.jtl 
+Return code from JMeter was 0
+Test /Acceptance.Tests/Account/Fragments/FragmentGetToken.jmx resulted in with Writing log file to: /jmeter/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Acceptance.Tests/Account/Fragments/FragmentGetToken.jmx
+Starting the test @ Sun Feb 26 23:01:56 UTC 2017 (1488150116865)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary =      0 in 00:00:00 = ******/s Avg:     0 Min: 9223372036854775807 Max: -9223372036854775808 Err:     0 (0.00%)
+Tidying up ...    @ Sun Feb 26 23:01:57 UTC 2017 (1488150117027)
+... end of run
+Running test: /Acceptance.Tests/Account/RegisterUser.jmx output to: /Test.Results/RegisterUser.jmx.jtl 
+Return code from JMeter was 0
+Test /Acceptance.Tests/Account/RegisterUser.jmx resulted in with Writing log file to: /jmeter/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Acceptance.Tests/Account/RegisterUser.jmx
+Starting the test @ Sun Feb 26 23:01:58 UTC 2017 (1488150118189)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary +      1 in 00:00:03 =    0.3/s Avg:  2814 Min:  2814 Max:  2814 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+summary +      3 in 00:00:00 =    7.1/s Avg:   106 Min:     1 Max:   298 Err:     0 (0.00%) Active: 0 Started: 1 Finished: 1
+summary =      4 in 00:00:03 =    1.2/s Avg:   783 Min:     1 Max:  2814 Err:     0 (0.00%)
+Tidying up ...    @ Sun Feb 26 23:02:01 UTC 2017 (1488150121796)
+... end of run
+Running test: /Acceptance.Tests/BiometricIdentification/DataMatchBusinessErrors.jmx output to: /Test.Results/DataMatchBusinessErrors.jmx.jtl 
+Return code from JMeter was 0
+Test /Acceptance.Tests/BiometricIdentification/DataMatchBusinessErrors.jmx resulted in with Writing log file to: /jmeter/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Acceptance.Tests/BiometricIdentification/DataMatchBusinessErrors.jmx
+Starting the test @ Sun Feb 26 23:02:03 UTC 2017 (1488150123011)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary +      1 in 00:00:00 =    2.0/s Avg:   175 Min:   175 Max:   175 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+summary +      3 in 00:00:00 =   16.0/s Avg:    51 Min:     2 Max:    90 Err:     0 (0.00%) Active: 0 Started: 1 Finished: 1
+summary =      4 in 00:00:01 =    5.8/s Avg:    82 Min:     2 Max:   175 Err:     0 (0.00%)
+Tidying up ...    @ Sun Feb 26 23:02:03 UTC 2017 (1488150123876)
+... end of run
+Running test: /Acceptance.Tests/BiometricIdentification/EnrollmentBusinessErrors.jmx output to: /Test.Results/EnrollmentBusinessErrors.jmx.jtl 
+Return code from JMeter was 0
+Test /Acceptance.Tests/BiometricIdentification/EnrollmentBusinessErrors.jmx resulted in with Writing log file to: /jmeter/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Acceptance.Tests/BiometricIdentification/EnrollmentBusinessErrors.jmx
+Starting the test @ Sun Feb 26 23:02:05 UTC 2017 (1488150125064)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary +      1 in 00:00:01 =    1.6/s Avg:   189 Min:   189 Max:   189 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+summary +      4 in 00:00:00 =   11.8/s Avg:    74 Min:     1 Max:   182 Err:     0 (0.00%) Active: 0 Started: 1 Finished: 1
+summary =      5 in 00:00:01 =    5.2/s Avg:    97 Min:     1 Max:   189 Err:     0 (0.00%)
+Tidying up ...    @ Sun Feb 26 23:02:06 UTC 2017 (1488150126177)
+... end of run
+Running test: /Acceptance.Tests/BiometricIdentification/Enrollment.jmx output to: /Test.Results/Enrollment.jmx.jtl 
+Return code from JMeter was 0
+Test /Acceptance.Tests/BiometricIdentification/Enrollment.jmx resulted in with Writing log file to: /jmeter/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Acceptance.Tests/BiometricIdentification/Enrollment.jmx
+Starting the test @ Sun Feb 26 23:02:07 UTC 2017 (1488150127542)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary =      4 in 00:00:01 =    6.8/s Avg:    55 Min:     1 Max:   138 Err:     0 (0.00%)
+Tidying up ...    @ Sun Feb 26 23:02:08 UTC 2017 (1488150128320)
+... end of run
+Running test: /Acceptance.Tests/BiometricIdentification/GetToken.jmx output to: /Test.Results/GetToken.jmx.jtl 
+Return code from JMeter was 0
+Test /Acceptance.Tests/BiometricIdentification/GetToken.jmx resulted in with Writing log file to: /jmeter/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Acceptance.Tests/BiometricIdentification/GetToken.jmx
+Starting the test @ Sun Feb 26 23:02:09 UTC 2017 (1488150129572)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary =      1 in 00:00:00 =    2.5/s Avg:   122 Min:   122 Max:   122 Err:     0 (0.00%)
+Tidying up ...    @ Sun Feb 26 23:02:10 UTC 2017 (1488150130119)
+... end of run
+Running test: /Acceptance.Tests/BiometricIdentification/CheckIdentity.jmx output to: /Test.Results/CheckIdentity.jmx.jtl 
+Return code from JMeter was 0
+Test /Acceptance.Tests/BiometricIdentification/CheckIdentity.jmx resulted in with Writing log file to: /jmeter/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Acceptance.Tests/BiometricIdentification/CheckIdentity.jmx
+Starting the test @ Sun Feb 26 23:02:11 UTC 2017 (1488150131329)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary =      3 in 00:00:00 =    6.6/s Avg:    51 Min:     1 Max:   123 Err:     0 (0.00%)
+Tidying up ...    @ Sun Feb 26 23:02:11 UTC 2017 (1488150131904)
+... end of run
+Running test: /Acceptance.Tests/BiometricIdentification/EnrollmentWithLimitedUser.jmx output to: /Test.Results/EnrollmentWithLimitedUser.jmx.jtl 
+Return code from JMeter was 0
+Test /Acceptance.Tests/BiometricIdentification/EnrollmentWithLimitedUser.jmx resulted in with Writing log file to: /jmeter/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Acceptance.Tests/BiometricIdentification/EnrollmentWithLimitedUser.jmx
+Starting the test @ Sun Feb 26 23:02:23 UTC 2017 (1488150143087)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary =      3 in 00:00:01 =    5.2/s Avg:    68 Min:     2 Max:   135 Err:     0 (0.00%)
+Tidying up ...    @ Sun Feb 26 23:02:23 UTC 2017 (1488150143804)
+... end of run
+Running test: /Acceptance.Tests/BiometricIdentification/SimpleEnrollment.jmx output to: /Test.Results/SimpleEnrollment.jmx.jtl 
+Return code from JMeter was 0
+Test /Acceptance.Tests/BiometricIdentification/SimpleEnrollment.jmx resulted in with Writing log file to: /jmeter/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Acceptance.Tests/BiometricIdentification/SimpleEnrollment.jmx
+Starting the test @ Sun Feb 26 23:02:25 UTC 2017 (1488150145036)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary =      2 in 00:00:01 =    3.9/s Avg:    84 Min:    34 Max:   134 Err:     0 (0.00%)
+Tidying up ...    @ Sun Feb 26 23:02:25 UTC 2017 (1488150145690)
+... end of run
+Running test: /Acceptance.Tests/BiometricIdentification/Fragments/FragmentEnrollment.jmx output to: /Test.Results/FragmentEnrollment.jmx.jtl 
+Return code from JMeter was 0
+Test /Acceptance.Tests/BiometricIdentification/Fragments/FragmentEnrollment.jmx resulted in with Writing log file to: /jmeter/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Acceptance.Tests/BiometricIdentification/Fragments/FragmentEnrollment.jmx
+Starting the test @ Sun Feb 26 23:02:26 UTC 2017 (1488150146888)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary =      0 in 00:00:00 = ******/s Avg:     0 Min: 9223372036854775807 Max: -9223372036854775808 Err:     0 (0.00%)
+Tidying up ...    @ Sun Feb 26 23:02:27 UTC 2017 (1488150147192)
+... end of run
+Running test: /Acceptance.Tests/BiometricIdentification/EnrollmentUpdate.jmx output to: /Test.Results/EnrollmentUpdate.jmx.jtl 
+Return code from JMeter was 0
+Test /Acceptance.Tests/BiometricIdentification/EnrollmentUpdate.jmx resulted in with Writing log file to: /jmeter/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Acceptance.Tests/BiometricIdentification/EnrollmentUpdate.jmx
+Starting the test @ Sun Feb 26 23:02:28 UTC 2017 (1488150148404)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary =      5 in 00:00:01 =    7.5/s Avg:    60 Min:     1 Max:   149 Err:     0 (0.00%)
+Tidying up ...    @ Sun Feb 26 23:02:29 UTC 2017 (1488150149258)
+... end of run
+Running test: /Acceptance.Tests/BiometricIdentification/DataMatch.jmx output to: /Test.Results/DataMatch.jmx.jtl 
+Return code from JMeter was 0
+Test /Acceptance.Tests/BiometricIdentification/DataMatch.jmx resulted in with Writing log file to: /jmeter/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Acceptance.Tests/BiometricIdentification/DataMatch.jmx
+Starting the test @ Sun Feb 26 23:02:30 UTC 2017 (1488150150496)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary +      1 in 00:00:00 =    2.2/s Avg:   123 Min:   123 Max:   123 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+summary +      3 in 00:00:01 =    5.8/s Avg:   157 Min:     2 Max:   435 Err:     0 (0.00%) Active: 0 Started: 1 Finished: 1
+summary =      4 in 00:00:01 =    4.1/s Avg:   148 Min:     2 Max:   435 Err:     0 (0.00%)
+Tidying up ...    @ Sun Feb 26 23:02:31 UTC 2017 (1488150151657)
+... end of run
+Running test: /Acceptance.Tests/BiometricIdentification/CategorySubCategoryValidator.jmx output to: /Test.Results/CategorySubCategoryValidator.jmx.jtl 
+Return code from JMeter was 0
+Test /Acceptance.Tests/BiometricIdentification/CategorySubCategoryValidator.jmx resulted in with Writing log file to: /jmeter/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Acceptance.Tests/BiometricIdentification/CategorySubCategoryValidator.jmx
+Starting the test @ Sun Feb 26 23:02:32 UTC 2017 (1488150152859)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary +      1 in 00:00:00 =    2.5/s Avg:   119 Min:   119 Max:   119 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+summary +     11 in 00:00:00 =   28.1/s Avg:    31 Min:     0 Max:    66 Err:     0 (0.00%) Active: 0 Started: 1 Finished: 1
+summary =     12 in 00:00:01 =   15.1/s Avg:    38 Min:     0 Max:   119 Err:     0 (0.00%)
+Tidying up ...    @ Sun Feb 26 23:02:33 UTC 2017 (1488150153770)
+... end of run
+There was an error and it was 1
+
+
+
+Performance: Recording JMeter reports '**/mgmt/setup/docker/AcceptanceTest/Test.Results/*.jtl'
+Performance: Parsing JMeter report file '/var/jenkins_home/jobs/bio-id-integration/builds/1/performance-reports/JMeter/CategorySubCategoryValidator.jmx.jtl'.
+Performance: Parsing JMeter report file '/var/jenkins_home/jobs/bio-id-integration/builds/1/performance-reports/JMeter/CheckIdentity.jmx.jtl'.
+Performance: Parsing JMeter report file '/var/jenkins_home/jobs/bio-id-integration/builds/1/performance-reports/JMeter/DataMatch.jmx.jtl'.
+Performance: Parsing JMeter report file '/var/jenkins_home/jobs/bio-id-integration/builds/1/performance-reports/JMeter/DataMatchBusinessErrors.jmx.jtl'.
+Performance: Parsing JMeter report file '/var/jenkins_home/jobs/bio-id-integration/builds/1/performance-reports/JMeter/DeviceAvarageAnalytics.jmx.jtl'.
+Performance: Parsing JMeter report file '/var/jenkins_home/jobs/bio-id-integration/builds/1/performance-reports/JMeter/DeviceHeartBeatDetails.jmx.jtl'.
+Performance: Parsing JMeter report file '/var/jenkins_home/jobs/bio-id-integration/builds/1/performance-reports/JMeter/Enrollment.jmx.jtl'.
+Performance: Parsing JMeter report file '/var/jenkins_home/jobs/bio-id-integration/builds/1/performance-reports/JMeter/EnrollmentBusinessErrors.jmx.jtl'.
+Performance: Parsing JMeter report file '/var/jenkins_home/jobs/bio-id-integration/builds/1/performance-reports/JMeter/EnrollmentUpdate.jmx.jtl'.
+Performance: Parsing JMeter report file '/var/jenkins_home/jobs/bio-id-integration/builds/1/performance-reports/JMeter/EnrollmentWithLimitedUser.jmx.jtl'.
+Performance: Parsing JMeter report file '/var/jenkins_home/jobs/bio-id-integration/builds/1/performance-reports/JMeter/FragmentEnrollment.jmx.jtl'.
+Performance: Parsing JMeter report file '/var/jenkins_home/jobs/bio-id-integration/builds/1/performance-reports/JMeter/FragmentGetToken.jmx.jtl'.
+Performance: Parsing JMeter report file '/var/jenkins_home/jobs/bio-id-integration/builds/1/performance-reports/JMeter/GetHeartBeatDetails.jmx.jtl'.
+Performance: Parsing JMeter report file '/var/jenkins_home/jobs/bio-id-integration/builds/1/performance-reports/JMeter/GetHeartBeatDetailsNormalized.jmx.jtl'.
+Performance: Parsing JMeter report file '/var/jenkins_home/jobs/bio-id-integration/builds/1/performance-reports/JMeter/GetToken.jmx.jtl'.
+Performance: Parsing JMeter report file '/var/jenkins_home/jobs/bio-id-integration/builds/1/performance-reports/JMeter/Register10DevicesSend10Heartbeats.jmx.jtl'.
+Performance: Parsing JMeter report file '/var/jenkins_home/jobs/bio-id-integration/builds/1/performance-reports/JMeter/RegisterDevice.jmx.jtl'.
+Performance: Parsing JMeter report file '/var/jenkins_home/jobs/bio-id-integration/builds/1/performance-reports/JMeter/RegisterUser.jmx.jtl'.
+Performance: Parsing JMeter report file '/var/jenkins_home/jobs/bio-id-integration/builds/1/performance-reports/JMeter/RegisterUserWithModelStateError.jmx.jtl'.
+Performance: Parsing JMeter report file '/var/jenkins_home/jobs/bio-id-integration/builds/1/performance-reports/JMeter/SetHeartBeat.jmx.jtl'.
+Performance: Parsing JMeter report file '/var/jenkins_home/jobs/bio-id-integration/builds/1/performance-reports/JMeter/SetHeartBeat50Times.jmx.jtl'.
+Performance: Parsing JMeter report file '/var/jenkins_home/jobs/bio-id-integration/builds/1/performance-reports/JMeter/SimpleEnrollment.jmx.jtl'.
+Performance: Parsing JMeter report file '/var/jenkins_home/jobs/bio-id-integration/builds/1/performance-reports/JMeter/TokenHashPersistenceControl.jmx.jtl'.
+Performance: Parsing JMeter report file '/var/jenkins_home/jobs/bio-id-integration/builds/1/performance-reports/JMeter/UserLoginLogout.jmx.jtl'.
+Performance: Percentage of errors greater or equal than 0% sets the build as unstable
+Performance: Percentage of errors greater or equal than 0% sets the build as failure
+
+
+
+CategorySubCategoryValidator.jmx.jtl has an average of: 38
+Performance: File CategorySubCategoryValidator.jmx.jtl reported 0.0% of errors [SUCCESS]. Build status is: SUCCESS
+
+
+
+CheckIdentity.jmx.jtl has an average of: 51
+Performance: File CheckIdentity.jmx.jtl reported 0.0% of errors [SUCCESS]. Build status is: SUCCESS
+
+
+
+DataMatch.jmx.jtl has an average of: 148
+Performance: File DataMatch.jmx.jtl reported 0.0% of errors [SUCCESS]. Build status is: SUCCESS
+
+
+
+DataMatchBusinessErrors.jmx.jtl has an average of: 82
+Performance: File DataMatchBusinessErrors.jmx.jtl reported 0.0% of errors [SUCCESS]. Build status is: SUCCESS
+
+
+
+DeviceAvarageAnalytics.jmx.jtl has an average of: 154
+Performance: File DeviceAvarageAnalytics.jmx.jtl reported 100.0% of errors [FAILURE]. Build status is: FAILURE
+
+
+
+DeviceHeartBeatDetails.jmx.jtl has an average of: 1159
+Performance: File DeviceHeartBeatDetails.jmx.jtl reported 50.0% of errors [FAILURE]. Build status is: FAILURE
+
+
+
+Enrollment.jmx.jtl has an average of: 55
+Performance: File Enrollment.jmx.jtl reported 0.0% of errors [FAILURE]. Build status is: FAILURE
+
+
+
+EnrollmentBusinessErrors.jmx.jtl has an average of: 97
+Performance: File EnrollmentBusinessErrors.jmx.jtl reported 0.0% of errors [FAILURE]. Build status is: FAILURE
+
+
+
+EnrollmentUpdate.jmx.jtl has an average of: 60
+Performance: File EnrollmentUpdate.jmx.jtl reported 0.0% of errors [FAILURE]. Build status is: FAILURE
+
+
+
+EnrollmentWithLimitedUser.jmx.jtl has an average of: 68
+Performance: File EnrollmentWithLimitedUser.jmx.jtl reported 0.0% of errors [FAILURE]. Build status is: FAILURE
+
+
+
+FragmentEnrollment.jmx.jtl has an average of: 0
+Performance: File FragmentEnrollment.jmx.jtl reported 0.0% of errors [FAILURE]. Build status is: FAILURE
+
+
+
+FragmentGetToken.jmx.jtl has an average of: 0
+Performance: File FragmentGetToken.jmx.jtl reported 0.0% of errors [FAILURE]. Build status is: FAILURE
+
+
+
+GetHeartBeatDetails.jmx.jtl has an average of: 84
+Performance: File GetHeartBeatDetails.jmx.jtl reported 100.0% of errors [FAILURE]. Build status is: FAILURE
+
+
+
+GetHeartBeatDetailsNormalized.jmx.jtl has an average of: 103
+Performance: File GetHeartBeatDetailsNormalized.jmx.jtl reported 100.0% of errors [FAILURE]. Build status is: FAILURE
+
+
+
+GetToken.jmx.jtl has an average of: 122
+Performance: File GetToken.jmx.jtl reported 0.0% of errors [FAILURE]. Build status is: FAILURE
+
+
+
+Register10DevicesSend10Heartbeats.jmx.jtl has an average of: 50
+Performance: File Register10DevicesSend10Heartbeats.jmx.jtl reported 0.0% of errors [FAILURE]. Build status is: FAILURE
+
+
+
+RegisterDevice.jmx.jtl has an average of: 874
+Performance: File RegisterDevice.jmx.jtl reported 0.0% of errors [FAILURE]. Build status is: FAILURE
+
+
+
+RegisterUser.jmx.jtl has an average of: 783
+Performance: File RegisterUser.jmx.jtl reported 0.0% of errors [FAILURE]. Build status is: FAILURE
+
+
+
+RegisterUserWithModelStateError.jmx.jtl has an average of: 120
+Performance: File RegisterUserWithModelStateError.jmx.jtl reported 100.0% of errors [FAILURE]. Build status is: FAILURE
+
+
+
+SetHeartBeat.jmx.jtl has an average of: 79
+Performance: File SetHeartBeat.jmx.jtl reported 100.0% of errors [FAILURE]. Build status is: FAILURE
+
+
+
+SetHeartBeat50Times.jmx.jtl has an average of: 51
+Performance: File SetHeartBeat50Times.jmx.jtl reported 0.0% of errors [FAILURE]. Build status is: FAILURE
+
+
+
+SimpleEnrollment.jmx.jtl has an average of: 84
+Performance: File SimpleEnrollment.jmx.jtl reported 0.0% of errors [FAILURE]. Build status is: FAILURE
+
+
+
+TokenHashPersistenceControl.jmx.jtl has an average of: 114
+Performance: File TokenHashPersistenceControl.jmx.jtl reported 100.0% of errors [FAILURE]. Build status is: FAILURE
+
+
+
+UserLoginLogout.jmx.jtl has an average of: 83
+Performance: File UserLoginLogout.jmx.jtl reported 100.0% of errors [FAILURE]. Build status is: FAILURE
+
+
+
+Build step 'Publish Performance test result report' changed build result to FAILURE
+[PostBuildScript] - Execution post build scripts.
+[workspace] $ /bin/bash -eu /tmp/hudson5828577810717184535.sh
++ source ./export-control-tool-ips.sh
++++ dirname ./export-control-tool-ips.sh
+++ CURRENT_DIR=.
+++ source ./get-ip.sh
+++++ ifconfig eth0
+++++ grep 'inet addr'
+++++ awk '{ print substr($2,6) }'
++++ NEW_IF_IP=
++++ [[ -z '' ]]
+++++ ifconfig enp0s8
+++++ grep 'inet addr'
+++++ awk '{ print substr($2,6) }'
++++ NEW_IF_IP=
++++ [[ -z '' ]]
++++ NEW_IF_IP=172.22.44.241
++++ SERVER_IF_IP=172.22.44.241
++++ echo 172.22.44.241
+172.22.44.241
+++ export SERVER_IF_IP=172.22.44.241
+++ SERVER_IF_IP=172.22.44.241
+++ export CONSUL_HTTP_ADDR=172.22.44.241:8500
+++ CONSUL_HTTP_ADDR=172.22.44.241:8500
+++ export NOMAD_ADDR=http://172.22.44.241:4646
+++ NOMAD_ADDR=http://172.22.44.241:4646
++ nomad stop -yes haproxy
+==> Monitoring evaluation "3f24aedb"
+    Evaluation triggered by job "haproxy"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "3f24aedb" finished with status "complete"
++ nomad stop -yes es-single-node
+==> Monitoring evaluation "a2d52034"
+    Evaluation triggered by job "es-single-node"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "a2d52034" finished with status "complete"
++ nomad stop -yes logstash-bio-id-app
+==> Monitoring evaluation "62d55208"
+    Evaluation triggered by job "logstash-bio-id-app"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "62d55208" finished with status "complete"
++ nomad stop -yes logstash-docker-gelf
+==> Monitoring evaluation "becf8a89"
+    Evaluation triggered by job "logstash-docker-gelf"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "becf8a89" finished with status "complete"
++ nomad stop -yes kibana
+==> Monitoring evaluation "dcc03dcb"
+    Evaluation triggered by job "kibana"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "dcc03dcb" finished with status "complete"
++ nomad stop -yes postgres-single-node
+==> Monitoring evaluation "6e488857"
+    Evaluation triggered by job "postgres-single-node"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "6e488857" finished with status "complete"
++ nomad stop -yes bio-id-app
+==> Monitoring evaluation "caab20f6"
+    Evaluation triggered by job "bio-id-app"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "caab20f6" finished with status "complete"
++ nomad stop -yes persistence-worker
+==> Monitoring evaluation "bc254903"
+    Evaluation triggered by job "persistence-worker"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "bc254903" finished with status "complete"
++ nomad stop -yes analytics-worker
+==> Monitoring evaluation "a9a65e72"
+    Evaluation triggered by job "analytics-worker"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "a9a65e72" finished with status "complete"
++ nomad stop -yes backoffice-portal
+==> Monitoring evaluation "9a47655e"
+    Evaluation triggered by job "backoffice-portal"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "9a47655e" finished with status "complete"
++ nomad stop -yes redis-single-node
+==> Monitoring evaluation "1b7a29e1"
+    Evaluation triggered by job "redis-single-node"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "1b7a29e1" finished with status "complete"
++ nomad stop -yes mongodb-single-node
+==> Monitoring evaluation "56c8eaa6"
+    Evaluation triggered by job "mongodb-single-node"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "56c8eaa6" finished with status "complete"
++ nomad stop -yes zookeeper-single-node
+==> Monitoring evaluation "af946c4c"
+    Evaluation triggered by job "zookeeper-single-node"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "af946c4c" finished with status "complete"
++ nomad stop -yes kafka-single-node
+==> Monitoring evaluation "940a97ed"
+    Evaluation triggered by job "kafka-single-node"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "940a97ed" finished with status "complete"
++ nomad stop -yes hashi-ui
+==> Monitoring evaluation "586c4fa2"
+    Evaluation triggered by job "hashi-ui"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "586c4fa2" finished with status "complete"
++ nomad stop -yes fabio
+==> Monitoring evaluation "ad9858a5"
+    Evaluation triggered by job "fabio"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "ad9858a5" finished with status "complete"
++ set -e
++ make nomad-gc
+## GC Nomad Batch Jobs to be able to resched jobs
+curl -f -X PUT "http://172.22.44.241:4646"/v1/system/gc || true
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
++ exit 0
+Finished: FAILURE

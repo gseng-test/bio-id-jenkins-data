@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="122" it="0" lt="122" ct="61" ts="1488150129915" s="true" lb="Get Token" rc="200" rm="OK" tn="Thread Group 1-1" dt="text" by="912" sby="305" ng="1" na="1">
+  <assertionResult>
+    <name>Should Return 200 Response</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Should Have a Valid Bearer Token</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage>Undetermined failure</failureMessage>
+  </assertionResult>
+</httpSample>
+
+</testResults>
