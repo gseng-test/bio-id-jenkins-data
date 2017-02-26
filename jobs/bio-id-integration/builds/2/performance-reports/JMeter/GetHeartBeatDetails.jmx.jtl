@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="123" it="0" lt="122" ct="69" ts="1488151692257" s="true" lb="Get Token" rc="200" rm="OK" tn="Get HeartBeat Details 1-1" dt="text" by="912" sby="288" ng="1" na="1">
+  <assertionResult>
+    <name>Should Return 200 Response</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Should Have a Valid Bearer Token</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage>Undetermined failure</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="16" it="0" lt="16" ct="0" ts="1488151692458" s="true" lb="RegisterDevice" rc="200" rm="OK" tn="Get HeartBeat Details 1-1" dt="text" by="210" sby="831" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="48" it="0" lt="48" ct="0" ts="1488151692481" s="true" lb="Set HeartBeat" rc="200" rm="OK" tn="Get HeartBeat Details 1-1" dt="text" by="210" sby="1139" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="604" it="0" lt="604" ct="2" ts="1488151697532" s="true" lb="Get HeartBeat No Serial Id" rc="200" rm="OK" tn="Get HeartBeat Details 1-1" dt="text" by="18769" sby="802" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>jp@gc - JSON Path Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="96" it="0" lt="96" ct="0" ts="1488151698152" s="true" lb="Get HeartBeat Last 8000 Milli Seconds - OK" rc="200" rm="OK" tn="Get HeartBeat Details 1-1" dt="text" by="574" sby="821" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>jp@gc - JSON Path Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="48" it="0" lt="48" ct="0" ts="1488151698252" s="true" lb="Get HeartBeat Last 2000 Milli Seconds - NOK" rc="200" rm="OK" tn="Get HeartBeat Details 1-1" dt="text" by="208" sby="821" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>jp@gc - JSON Path Assertion</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<sample t="1" it="0" lt="0" ct="0" ts="1488151698326" s="true" lb="Debug Sampler" rc="200" rm="OK" tn="Get HeartBeat Details 1-1" dt="text" by="1264" sby="0" ng="1" na="1"/>
+
+</testResults>

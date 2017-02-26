@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="133" it="0" lt="133" ct="61" ts="1488151723030" s="true" lb="Register User" rc="200" rm="OK" tn="User Registration Test 1-1" dt="text" by="210" sby="341" ng="1" na="1"/>
+<httpSample t="40" it="0" lt="40" ct="0" ts="1488151723168" s="true" lb="Get Token" rc="200" rm="OK" tn="User Registration Test 1-1" dt="text" by="894" sby="292" ng="1" na="1">
+  <assertionResult>
+    <name>Should Return 200 Response</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Should Have a Valid Bearer Token</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage>Undetermined failure</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="7" it="0" lt="7" ct="0" ts="1488151723274" s="true" lb="Get User Info" rc="200" rm="OK" tn="User Registration Test 1-1" dt="text" by="278" sby="737" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<sample t="1" it="0" lt="0" ct="0" ts="1488151723301" s="true" lb="Debug Sampler" rc="200" rm="OK" tn="User Registration Test 1-1" dt="text" by="939" sby="0" ng="1" na="1"/>
+
+</testResults>

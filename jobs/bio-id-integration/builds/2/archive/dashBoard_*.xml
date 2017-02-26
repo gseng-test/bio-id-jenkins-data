@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<results>
+<absoluteDefinition>
+	<unstable>0</unstable>
+	<failed>0</failed>
+	<calculated>0.0</calculated>
+</absoluteDefinition>
+<average>
+	<Debug Sampler>
+		<currentBuildAvg>1</currentBuildAvg>
+	</Debug Sampler>
+	<Get Token>
+		<currentBuildAvg>122</currentBuildAvg>
+	</Get Token>
+	<User Login>
+		<currentBuildAvg>30</currentBuildAvg>
+	</User Login>
+	<User Logout>
+		<currentBuildAvg>46</currentBuildAvg>
+	</User Logout>
+</average>
+<median>
+	<Debug Sampler>
+		<currentBuildMed>1</currentBuildMed>
+	</Debug Sampler>
+	<Get Token>
+		<currentBuildMed>122</currentBuildMed>
+	</Get Token>
+	<User Login>
+		<currentBuildMed>30</currentBuildMed>
+	</User Login>
+	<User Logout>
+		<currentBuildMed>46</currentBuildMed>
+	</User Logout>
+</median>
+<percentile>
+	<Debug Sampler>
+		<currentBuild90Line>1</currentBuild90Line>
+	</Debug Sampler>
+	<Get Token>
+		<currentBuild90Line>122</currentBuild90Line>
+	</Get Token>
+	<User Login>
+		<currentBuild90Line>30</currentBuild90Line>
+	</User Login>
+	<User Logout>
+		<currentBuild90Line>46</currentBuild90Line>
+	</User Logout>
+</percentile>
+</results>

@@ -1,0 +1,1684 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="124" it="0" lt="124" ct="68" ts="1488151655961" s="true" lb="Get Token" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-1" dt="text" by="912" sby="288" ng="1" na="1">
+  <assertionResult>
+    <name>Should Return 200 Response</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Should Have a Valid Bearer Token</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage>Undetermined failure</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="13" it="0" lt="13" ct="0" ts="1488151656156" s="true" lb="RegisterDevice" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-1" dt="text" by="210" sby="822" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="129" it="0" lt="129" ct="0" ts="1488151656175" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-1" dt="text" by="210" sby="1166" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="53" it="0" lt="53" ct="0" ts="1488151656307" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-1" dt="text" by="210" sby="1167" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="50" it="0" lt="50" ct="0" ts="1488151656362" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-1" dt="text" by="210" sby="1166" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="65" it="0" lt="65" ct="0" ts="1488151656416" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-1" dt="text" by="210" sby="1167" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="106" it="0" lt="106" ct="0" ts="1488151656486" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-1" dt="text" by="210" sby="1166" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="57" it="0" lt="57" ct="0" ts="1488151656595" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-1" dt="text" by="210" sby="1166" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="58" it="0" lt="58" ct="0" ts="1488151656658" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-1" dt="text" by="210" sby="1167" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="67" it="0" lt="67" ct="0" ts="1488151656718" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-1" dt="text" by="210" sby="1166" ng="2" na="2">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="73" it="0" lt="71" ct="4" ts="1488151656766" s="true" lb="Get Token" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-2" dt="text" by="912" sby="288" ng="2" na="2">
+  <assertionResult>
+    <name>Should Return 200 Response</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Should Have a Valid Bearer Token</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage>Undetermined failure</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="63" it="0" lt="63" ct="0" ts="1488151656788" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-1" dt="text" by="210" sby="1167" ng="2" na="2">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="87" it="0" lt="87" ct="0" ts="1488151656857" s="true" lb="RegisterDevice" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-2" dt="text" by="210" sby="822" ng="2" na="2">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="88" it="0" lt="88" ct="0" ts="1488151656860" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-1" dt="text" by="210" sby="1167" ng="2" na="2">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<sample t="3" it="0" lt="0" ct="0" ts="1488151656967" s="true" lb="Debug Sampler" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-1" dt="text" by="1109" sby="0" ng="2" na="2"/>
+<httpSample t="62" it="0" lt="62" ct="0" ts="1488151656946" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-2" dt="text" by="210" sby="1166" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="76" it="0" lt="76" ct="0" ts="1488151657009" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-2" dt="text" by="210" sby="1166" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="56" it="0" lt="56" ct="0" ts="1488151657088" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-2" dt="text" by="210" sby="1166" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="62" it="0" lt="62" ct="0" ts="1488151657146" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-2" dt="text" by="210" sby="1165" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="55" it="0" lt="55" ct="0" ts="1488151657211" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-2" dt="text" by="210" sby="1165" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="63" it="0" lt="63" ct="0" ts="1488151657269" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-2" dt="text" by="210" sby="1165" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="54" it="0" lt="54" ct="0" ts="1488151657334" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-2" dt="text" by="210" sby="1165" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="58" it="0" lt="58" ct="0" ts="1488151657390" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-2" dt="text" by="210" sby="1165" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="53" it="0" lt="53" ct="0" ts="1488151657450" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-2" dt="text" by="210" sby="1166" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="55" it="0" lt="55" ct="0" ts="1488151657505" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-2" dt="text" by="210" sby="1166" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<sample t="0" it="0" lt="0" ct="0" ts="1488151657561" s="true" lb="Debug Sampler" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-2" dt="text" by="1107" sby="0" ng="1" na="1"/>
+<httpSample t="44" it="0" lt="44" ct="1" ts="1488151657751" s="true" lb="Get Token" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-3" dt="text" by="912" sby="288" ng="1" na="1">
+  <assertionResult>
+    <name>Should Return 200 Response</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Should Have a Valid Bearer Token</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage>Undetermined failure</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="75" it="0" lt="75" ct="0" ts="1488151657801" s="true" lb="RegisterDevice" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-3" dt="text" by="210" sby="822" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="59" it="0" lt="59" ct="0" ts="1488151657878" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-3" dt="text" by="210" sby="1166" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="56" it="0" lt="56" ct="0" ts="1488151657942" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-3" dt="text" by="210" sby="1165" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="58" it="0" lt="58" ct="0" ts="1488151658000" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-3" dt="text" by="210" sby="1166" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="48" it="0" lt="48" ct="0" ts="1488151658060" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-3" dt="text" by="210" sby="1165" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="57" it="0" lt="57" ct="0" ts="1488151658111" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-3" dt="text" by="210" sby="1166" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="58" it="0" lt="58" ct="0" ts="1488151658170" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-3" dt="text" by="210" sby="1165" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="62" it="0" lt="62" ct="0" ts="1488151658230" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-3" dt="text" by="210" sby="1166" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="56" it="0" lt="56" ct="0" ts="1488151658294" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-3" dt="text" by="210" sby="1166" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="54" it="0" lt="54" ct="0" ts="1488151658354" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-3" dt="text" by="210" sby="1166" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="50" it="0" lt="50" ct="0" ts="1488151658410" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-3" dt="text" by="210" sby="1166" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<sample t="0" it="0" lt="0" ct="0" ts="1488151658464" s="true" lb="Debug Sampler" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-3" dt="text" by="1108" sby="0" ng="1" na="1"/>
+<httpSample t="41" it="0" lt="41" ct="2" ts="1488151658794" s="true" lb="Get Token" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-4" dt="text" by="912" sby="288" ng="1" na="1">
+  <assertionResult>
+    <name>Should Return 200 Response</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Should Have a Valid Bearer Token</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage>Undetermined failure</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="51" it="0" lt="51" ct="0" ts="1488151658841" s="true" lb="RegisterDevice" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-4" dt="text" by="210" sby="822" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="47" it="0" lt="47" ct="0" ts="1488151658894" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-4" dt="text" by="210" sby="1166" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="50" it="0" lt="50" ct="0" ts="1488151658944" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-4" dt="text" by="210" sby="1165" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="72" it="0" lt="72" ct="0" ts="1488151658996" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-4" dt="text" by="210" sby="1165" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="58" it="0" lt="57" ct="0" ts="1488151659070" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-4" dt="text" by="210" sby="1165" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="81" it="0" lt="81" ct="0" ts="1488151659135" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-4" dt="text" by="210" sby="1166" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="51" it="0" lt="51" ct="0" ts="1488151659217" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-4" dt="text" by="210" sby="1166" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="50" it="0" lt="50" ct="0" ts="1488151659270" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-4" dt="text" by="210" sby="1166" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="49" it="0" lt="49" ct="0" ts="1488151659323" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-4" dt="text" by="210" sby="1166" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="50" it="0" lt="50" ct="0" ts="1488151659374" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-4" dt="text" by="210" sby="1165" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="47" it="0" lt="47" ct="0" ts="1488151659425" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-4" dt="text" by="210" sby="1166" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<sample t="1" it="0" lt="0" ct="0" ts="1488151659473" s="true" lb="Debug Sampler" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-4" dt="text" by="1108" sby="0" ng="1" na="1"/>
+<httpSample t="39" it="0" lt="39" ct="1" ts="1488151659817" s="true" lb="Get Token" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-5" dt="text" by="912" sby="288" ng="1" na="1">
+  <assertionResult>
+    <name>Should Return 200 Response</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Should Have a Valid Bearer Token</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage>Undetermined failure</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="51" it="0" lt="51" ct="0" ts="1488151659861" s="true" lb="RegisterDevice" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-5" dt="text" by="210" sby="822" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="51" it="0" lt="51" ct="0" ts="1488151659913" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-5" dt="text" by="210" sby="1166" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="47" it="0" lt="47" ct="0" ts="1488151659965" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-5" dt="text" by="210" sby="1167" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="54" it="0" lt="53" ct="0" ts="1488151660014" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-5" dt="text" by="210" sby="1166" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="51" it="0" lt="51" ct="0" ts="1488151660069" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-5" dt="text" by="210" sby="1167" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="56" it="0" lt="56" ct="0" ts="1488151660121" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-5" dt="text" by="210" sby="1166" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="53" it="0" lt="53" ct="0" ts="1488151660179" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-5" dt="text" by="210" sby="1166" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="54" it="0" lt="54" ct="0" ts="1488151660234" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-5" dt="text" by="210" sby="1166" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="50" it="0" lt="50" ct="0" ts="1488151660290" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-5" dt="text" by="210" sby="1166" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="51" it="0" lt="51" ct="0" ts="1488151660341" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-5" dt="text" by="210" sby="1166" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="46" it="0" lt="46" ct="0" ts="1488151660394" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-5" dt="text" by="210" sby="1167" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<sample t="0" it="0" lt="0" ct="0" ts="1488151660441" s="true" lb="Debug Sampler" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-5" dt="text" by="1109" sby="0" ng="1" na="1"/>
+<httpSample t="42" it="0" lt="42" ct="1" ts="1488151660833" s="true" lb="Get Token" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-6" dt="text" by="912" sby="288" ng="1" na="1">
+  <assertionResult>
+    <name>Should Return 200 Response</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Should Have a Valid Bearer Token</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage>Undetermined failure</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="52" it="0" lt="52" ct="0" ts="1488151660880" s="true" lb="RegisterDevice" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-6" dt="text" by="210" sby="822" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="47" it="0" lt="47" ct="0" ts="1488151660933" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-6" dt="text" by="210" sby="1167" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="47" it="0" lt="47" ct="0" ts="1488151660981" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-6" dt="text" by="210" sby="1167" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="55" it="0" lt="55" ct="0" ts="1488151661029" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-6" dt="text" by="210" sby="1167" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="56" it="0" lt="56" ct="0" ts="1488151661086" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-6" dt="text" by="210" sby="1167" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="48" it="0" lt="48" ct="0" ts="1488151661144" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-6" dt="text" by="210" sby="1166" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="50" it="0" lt="50" ct="0" ts="1488151661194" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-6" dt="text" by="210" sby="1167" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="47" it="0" lt="47" ct="0" ts="1488151661245" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-6" dt="text" by="210" sby="1167" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="47" it="0" lt="47" ct="0" ts="1488151661293" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-6" dt="text" by="210" sby="1166" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="54" it="0" lt="54" ct="0" ts="1488151661342" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-6" dt="text" by="210" sby="1167" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="49" it="0" lt="49" ct="0" ts="1488151661398" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-6" dt="text" by="210" sby="1167" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<sample t="0" it="0" lt="0" ct="0" ts="1488151661449" s="true" lb="Debug Sampler" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-6" dt="text" by="1109" sby="0" ng="1" na="1"/>
+<httpSample t="62" it="0" lt="62" ct="1" ts="1488151661848" s="true" lb="Get Token" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-7" dt="text" by="912" sby="288" ng="1" na="1">
+  <assertionResult>
+    <name>Should Return 200 Response</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Should Have a Valid Bearer Token</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage>Undetermined failure</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="54" it="0" lt="54" ct="0" ts="1488151661917" s="true" lb="RegisterDevice" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-7" dt="text" by="210" sby="822" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="52" it="0" lt="52" ct="0" ts="1488151661973" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-7" dt="text" by="210" sby="1168" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="57" it="0" lt="57" ct="0" ts="1488151662027" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-7" dt="text" by="210" sby="1168" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="57" it="0" lt="57" ct="0" ts="1488151662085" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-7" dt="text" by="210" sby="1168" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="49" it="0" lt="48" ct="0" ts="1488151662144" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-7" dt="text" by="210" sby="1168" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="50" it="0" lt="50" ct="0" ts="1488151662194" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-7" dt="text" by="210" sby="1167" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="51" it="0" lt="51" ct="0" ts="1488151662245" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-7" dt="text" by="210" sby="1167" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="46" it="0" lt="46" ct="0" ts="1488151662298" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-7" dt="text" by="210" sby="1167" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="51" it="0" lt="51" ct="0" ts="1488151662346" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-7" dt="text" by="210" sby="1168" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="60" it="0" lt="60" ct="0" ts="1488151662399" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-7" dt="text" by="210" sby="1168" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="48" it="0" lt="48" ct="0" ts="1488151662461" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-7" dt="text" by="210" sby="1168" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<sample t="0" it="0" lt="0" ct="0" ts="1488151662510" s="true" lb="Debug Sampler" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-7" dt="text" by="1110" sby="0" ng="1" na="1"/>
+<httpSample t="36" it="0" lt="36" ct="1" ts="1488151662880" s="true" lb="Get Token" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-8" dt="text" by="912" sby="288" ng="1" na="1">
+  <assertionResult>
+    <name>Should Return 200 Response</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Should Have a Valid Bearer Token</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage>Undetermined failure</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="65" it="0" lt="65" ct="0" ts="1488151662923" s="true" lb="RegisterDevice" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-8" dt="text" by="210" sby="822" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="54" it="0" lt="54" ct="0" ts="1488151662990" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-8" dt="text" by="210" sby="1165" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="50" it="0" lt="50" ct="0" ts="1488151663050" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-8" dt="text" by="210" sby="1165" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="55" it="0" lt="55" ct="0" ts="1488151663101" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-8" dt="text" by="210" sby="1165" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="54" it="0" lt="54" ct="0" ts="1488151663158" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-8" dt="text" by="210" sby="1166" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="48" it="0" lt="48" ct="0" ts="1488151663213" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-8" dt="text" by="210" sby="1166" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="52" it="0" lt="52" ct="0" ts="1488151663268" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-8" dt="text" by="210" sby="1166" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="61" it="0" lt="60" ct="0" ts="1488151663323" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-8" dt="text" by="210" sby="1166" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="70" it="0" lt="70" ct="0" ts="1488151663385" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-8" dt="text" by="210" sby="1166" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="57" it="0" lt="57" ct="0" ts="1488151663459" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-8" dt="text" by="210" sby="1166" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="59" it="0" lt="59" ct="0" ts="1488151663518" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-8" dt="text" by="210" sby="1166" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<sample t="1" it="0" lt="0" ct="0" ts="1488151663578" s="true" lb="Debug Sampler" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-8" dt="text" by="1108" sby="0" ng="1" na="1"/>
+<httpSample t="52" it="0" lt="51" ct="2" ts="1488151663918" s="true" lb="Get Token" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-9" dt="text" by="912" sby="288" ng="1" na="1">
+  <assertionResult>
+    <name>Should Return 200 Response</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Should Have a Valid Bearer Token</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage>Undetermined failure</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="62" it="0" lt="62" ct="0" ts="1488151663974" s="true" lb="RegisterDevice" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-9" dt="text" by="210" sby="822" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="56" it="0" lt="56" ct="0" ts="1488151664037" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-9" dt="text" by="210" sby="1166" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="49" it="0" lt="49" ct="0" ts="1488151664095" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-9" dt="text" by="210" sby="1166" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="60" it="0" lt="60" ct="0" ts="1488151664148" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-9" dt="text" by="210" sby="1166" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="57" it="0" lt="57" ct="0" ts="1488151664211" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-9" dt="text" by="210" sby="1165" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="59" it="0" lt="59" ct="0" ts="1488151664269" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-9" dt="text" by="210" sby="1165" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="48" it="0" lt="48" ct="0" ts="1488151664329" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-9" dt="text" by="210" sby="1165" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="62" it="0" lt="62" ct="0" ts="1488151664379" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-9" dt="text" by="210" sby="1166" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="53" it="0" lt="53" ct="0" ts="1488151664443" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-9" dt="text" by="210" sby="1166" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="55" it="0" lt="55" ct="0" ts="1488151664497" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-9" dt="text" by="210" sby="1165" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="66" it="0" lt="66" ct="0" ts="1488151664560" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-9" dt="text" by="210" sby="1165" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<sample t="0" it="0" lt="0" ct="0" ts="1488151664628" s="true" lb="Debug Sampler" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-9" dt="text" by="1108" sby="0" ng="1" na="1"/>
+<httpSample t="46" it="0" lt="46" ct="1" ts="1488151664953" s="true" lb="Get Token" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-10" dt="text" by="912" sby="288" ng="1" na="1">
+  <assertionResult>
+    <name>Should Return 200 Response</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Should Have a Valid Bearer Token</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage>Undetermined failure</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="55" it="0" lt="55" ct="0" ts="1488151665005" s="true" lb="RegisterDevice" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-10" dt="text" by="210" sby="822" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="50" it="0" lt="50" ct="0" ts="1488151665062" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-10" dt="text" by="210" sby="1167" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="55" it="0" lt="55" ct="0" ts="1488151665114" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-10" dt="text" by="210" sby="1166" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="14" it="0" lt="14" ct="0" ts="1488151665172" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-10" dt="text" by="210" sby="1166" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="10" it="0" lt="10" ct="0" ts="1488151665187" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-10" dt="text" by="210" sby="1167" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="63" it="0" lt="63" ct="0" ts="1488151665199" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-10" dt="text" by="210" sby="1167" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="56" it="0" lt="56" ct="0" ts="1488151665264" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-10" dt="text" by="210" sby="1167" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="51" it="0" lt="51" ct="0" ts="1488151665321" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-10" dt="text" by="210" sby="1167" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="47" it="0" lt="47" ct="0" ts="1488151665373" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-10" dt="text" by="210" sby="1166" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="47" it="0" lt="47" ct="0" ts="1488151665421" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-10" dt="text" by="210" sby="1167" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="51" it="0" lt="51" ct="0" ts="1488151665469" s="true" lb="HeartBeat" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-10" dt="text" by="210" sby="1167" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<sample t="0" it="0" lt="0" ct="0" ts="1488151665521" s="true" lb="Debug Sampler" rc="200" rm="OK" tn="Register 10 Devices and Send 10 Heartbeats Each 1-10" dt="text" by="1110" sby="0" ng="1" na="1"/>
+
+</testResults>

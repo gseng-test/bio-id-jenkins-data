@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="112" it="0" lt="112" ct="59" ts="1488151740298" s="true" lb="Get Token" rc="200" rm="OK" tn="Enrollment Test 1-1" dt="text" by="912" sby="288" ng="1" na="1">
+  <assertionResult>
+    <name>Should Return 200 Response</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Should Have a Valid Bearer Token</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage>Undetermined failure</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="27" it="0" lt="27" ct="0" ts="1488151740481" s="true" lb="Enrollment" rc="200" rm="OK" tn="Enrollment Test 1-1" dt="text" by="210" sby="183620" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="78" it="0" lt="78" ct="0" ts="1488151740514" s="true" lb="Enrollment Update" rc="200" rm="OK" tn="Enrollment Test 1-1" dt="text" by="210" sby="92179" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="51" it="0" lt="51" ct="0" ts="1488151740598" s="true" lb="Enrollment Check" rc="200" rm="OK" tn="Enrollment Test 1-1" dt="text" by="309" sby="788" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<sample t="2" it="0" lt="0" ct="0" ts="1488151740671" s="true" lb="Debug Sampler" rc="200" rm="OK" tn="Enrollment Test 1-1" dt="text" by="1015" sby="0" ng="1" na="1"/>
+
+</testResults>

@@ -1,0 +1,1215 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace /var/jenkins_home/jobs/bio-id-integration/workspace
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Done
+Cloning the remote Git repository
+Cloning repository http://zistvy90:7990/scm/tge36/bio-ident.git
+ > git init /var/jenkins_home/jobs/bio-id-integration/workspace # timeout=10
+Fetching upstream changes from http://zistvy90:7990/scm/tge36/bio-ident.git
+ > git --version # timeout=10
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress http://zistvy90:7990/scm/tge36/bio-ident.git +refs/heads/*:refs/remotes/origin/*
+ > git config remote.origin.url http://zistvy90:7990/scm/tge36/bio-ident.git # timeout=10
+ > git config --add remote.origin.fetch +refs/heads/*:refs/remotes/origin/* # timeout=10
+ > git config remote.origin.url http://zistvy90:7990/scm/tge36/bio-ident.git # timeout=10
+Fetching upstream changes from http://zistvy90:7990/scm/tge36/bio-ident.git
+using GIT_ASKPASS to set credentials 
+ > git fetch --tags --progress http://zistvy90:7990/scm/tge36/bio-ident.git +refs/heads/*:refs/remotes/origin/*
+ > git rev-parse refs/remotes/origin/master^{commit} # timeout=10
+ > git rev-parse refs/remotes/origin/origin/master^{commit} # timeout=10
+Checking out Revision 183e2a10431c1f97fec3a8d49f052db9e5be99f5 (refs/remotes/origin/master)
+ > git config core.sparsecheckout # timeout=10
+ > git checkout -f 183e2a10431c1f97fec3a8d49f052db9e5be99f5
+ > git rev-list 183e2a10431c1f97fec3a8d49f052db9e5be99f5 # timeout=10
+[workspace] $ /bin/bash -eu /tmp/hudson2489474835642595586.sh
+Running inside a container, setting CONTAINER_PROJ_PATH as the PROJ_PATH
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/acceptance-tests.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/analytics-worker.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/backoffice-portal.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/bio-id-app.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/devops-summit-demo.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/es-client-cluster.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/es-data-cluster.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/es-master-cluster.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/es-single-node.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/fabio.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/haproxy.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/hashi-ui.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/jmeter.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/kafka-cluster.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/kafka-single-node.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/kibana.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/logstash-bio-id-app.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/logstash-docker-gelf.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/mongodb-cluster.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/mongodb-single-node.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/nginx.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/persistence-worker.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/postgres-single-node.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/redis-cluster.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/redis-single-node.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/unit-integration-tests.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/zookeeper-cluster.nomad
+Producing the file /integration/build/mgmt/setup/dev-env/nomad-jobs/job-definitions/zookeeper-single-node.nomad
++ [[ ! -v CONTAINER_PROJ_PATH ]]
++ nomad run ../setup/dev-env/nomad-jobs/job-definitions/hashi-ui.nomad
+==> Monitoring evaluation "f981038a"
+    Evaluation triggered by job "hashi-ui"
+    Allocation "16a25ab2" created: node "da0fdb7a", group "hashi-ui"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "f981038a" finished with status "complete"
++ ./wait-for-job-to-run.sh hashi-ui hashi-ui 1
+172.22.44.241
+Job: hashi-ui, Task: hashi-ui, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 23:22:02 UTC 2017
+Job: hashi-ui, Task: hashi-ui, Requested: 1, Scheduled: 1, Dead: 0 Sun Feb 26 23:22:03 UTC 2017
++ ./wait-for-checks-to-be-green.sh hashi-ui
+172.22.44.241
+No of checks for service hashi-ui is 2. Passing is 1, sleeping for 1 sec.
+No of checks for service hashi-ui is 2. Passing is 1, sleeping for 1 sec.
+No of checks for service hashi-ui is 2. Passing is 1, sleeping for 1 sec.
+No of checks for service hashi-ui is 2. Passing is 1, sleeping for 1 sec.
+No of checks for service hashi-ui is 2. Passing is 2, sleeping for 1 sec.
+All good for service hashi-ui
++ nomad run ../setup/dev-env/nomad-jobs/job-definitions/fabio.nomad
+==> Monitoring evaluation "ef8ff03f"
+    Evaluation triggered by job "fabio"
+    Allocation "2b633b9d" created: node "da0fdb7a", group "fabio"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "ef8ff03f" finished with status "complete"
++ ./wait-for-job-to-run.sh fabio fabio 1
+172.22.44.241
+Job: fabio, Task: fabio, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 23:22:14 UTC 2017
+Job: fabio, Task: fabio, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 23:22:15 UTC 2017
+Job: fabio, Task: fabio, Requested: 1, Scheduled: 1, Dead: 0 Sun Feb 26 23:22:16 UTC 2017
++ ./wait-for-checks-to-be-green.sh fabio
+172.22.44.241
+No of checks for service fabio is 2. Passing is 2, sleeping for 1 sec.
+All good for service fabio
++ nomad run ../setup/dev-env/nomad-jobs/job-definitions/es-single-node.nomad
+==> Monitoring evaluation "b9f5f30b"
+    Evaluation triggered by job "es-single-node"
+    Allocation "217027b1" created: node "da0fdb7a", group "elasticsearch"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "b9f5f30b" finished with status "complete"
++ ./wait-for-job-to-run.sh es-single-node elasticsearch 1
+172.22.44.241
+Job: es-single-node, Task: elasticsearch, Requested: 1, Scheduled: 1, Dead: 0 Sun Feb 26 23:22:20 UTC 2017
++ ./wait-for-checks-to-be-green.sh elasticsearch
+172.22.44.241
+No of checks for service elasticsearch is 5. Passing is 1, sleeping for 1 sec.
+No of checks for service elasticsearch is 5. Passing is 2, sleeping for 1 sec.
+No of checks for service elasticsearch is 5. Passing is 2, sleeping for 1 sec.
+No of checks for service elasticsearch is 5. Passing is 4, sleeping for 1 sec.
+No of checks for service elasticsearch is 5. Passing is 4, sleeping for 1 sec.
+No of checks for service elasticsearch is 5. Passing is 4, sleeping for 1 sec.
+No of checks for service elasticsearch is 5. Passing is 4, sleeping for 1 sec.
+No of checks for service elasticsearch is 5. Passing is 5, sleeping for 1 sec.
+All good for service elasticsearch
++ nomad run ../setup/dev-env/nomad-jobs/job-definitions/logstash-docker-gelf.nomad
+==> Monitoring evaluation "20969382"
+    Evaluation triggered by job "logstash-docker-gelf"
+    Allocation "29c31851" created: node "da0fdb7a", group "logstash"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "20969382" finished with status "complete"
++ ./wait-for-job-to-run.sh logstash-docker-gelf logstash-docker-gelf 1
+172.22.44.241
+Job: logstash-docker-gelf, Task: logstash-docker-gelf, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 23:22:37 UTC 2017
+Job: logstash-docker-gelf, Task: logstash-docker-gelf, Requested: 1, Scheduled: 1, Dead: 0 Sun Feb 26 23:22:38 UTC 2017
++ ./wait-for-checks-to-be-green.sh logstash-docker-gelf
+172.22.44.241
+No of checks for service logstash-docker-gelf is 5. Passing is 1, sleeping for 1 sec.
+No of checks for service logstash-docker-gelf is 5. Passing is 2, sleeping for 1 sec.
+No of checks for service logstash-docker-gelf is 5. Passing is 2, sleeping for 1 sec.
+No of checks for service logstash-docker-gelf is 5. Passing is 2, sleeping for 1 sec.
+No of checks for service logstash-docker-gelf is 5. Passing is 3, sleeping for 1 sec.
+No of checks for service logstash-docker-gelf is 5. Passing is 3, sleeping for 1 sec.
+No of checks for service logstash-docker-gelf is 5. Passing is 4, sleeping for 1 sec.
+No of checks for service logstash-docker-gelf is 5. Passing is 4, sleeping for 1 sec.
+No of checks for service logstash-docker-gelf is 5. Passing is 5, sleeping for 1 sec.
+All good for service logstash-docker-gelf
++ nomad run ../setup/dev-env/nomad-jobs/job-definitions/logstash-bio-id-app.nomad
+==> Monitoring evaluation "619ea432"
+    Evaluation triggered by job "logstash-bio-id-app"
+    Allocation "4660f688" created: node "da0fdb7a", group "logstash"
+    Allocation "4660f688" status changed: "pending" -> "running"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "619ea432" finished with status "complete"
++ ./wait-for-job-to-run.sh logstash-bio-id-app logstash-bio-id-app 1
+172.22.44.241
+Job: logstash-bio-id-app, Task: logstash-bio-id-app, Requested: 1, Scheduled: 1, Dead: 0 Sun Feb 26 23:22:58 UTC 2017
++ ./wait-for-checks-to-be-green.sh logstash-bio-id-app
+172.22.44.241
+No of checks for service logstash-bio-id-app is 5. Passing is 2, sleeping for 1 sec.
+No of checks for service logstash-bio-id-app is 5. Passing is 2, sleeping for 1 sec.
+No of checks for service logstash-bio-id-app is 5. Passing is 3, sleeping for 1 sec.
+No of checks for service logstash-bio-id-app is 5. Passing is 3, sleeping for 1 sec.
+No of checks for service logstash-bio-id-app is 5. Passing is 3, sleeping for 1 sec.
+No of checks for service logstash-bio-id-app is 5. Passing is 4, sleeping for 1 sec.
+No of checks for service logstash-bio-id-app is 5. Passing is 4, sleeping for 1 sec.
+No of checks for service logstash-bio-id-app is 5. Passing is 4, sleeping for 1 sec.
+No of checks for service logstash-bio-id-app is 5. Passing is 4, sleeping for 1 sec.
+No of checks for service logstash-bio-id-app is 5. Passing is 4, sleeping for 1 sec.
+No of checks for service logstash-bio-id-app is 5. Passing is 4, sleeping for 1 sec.
+No of checks for service logstash-bio-id-app is 5. Passing is 4, sleeping for 1 sec.
+No of checks for service logstash-bio-id-app is 5. Passing is 4, sleeping for 1 sec.
+No of checks for service logstash-bio-id-app is 5. Passing is 4, sleeping for 1 sec.
+No of checks for service logstash-bio-id-app is 5. Passing is 4, sleeping for 1 sec.
+No of checks for service logstash-bio-id-app is 5. Passing is 4, sleeping for 1 sec.
+No of checks for service logstash-bio-id-app is 5. Passing is 4, sleeping for 1 sec.
+No of checks for service logstash-bio-id-app is 5. Passing is 4, sleeping for 1 sec.
+No of checks for service logstash-bio-id-app is 5. Passing is 4, sleeping for 1 sec.
+No of checks for service logstash-bio-id-app is 5. Passing is 5, sleeping for 1 sec.
+All good for service logstash-bio-id-app
++ nomad run ../setup/dev-env/nomad-jobs/job-definitions/kibana.nomad
+==> Monitoring evaluation "e0ec1c73"
+    Evaluation triggered by job "kibana"
+    Allocation "e5189b44" created: node "da0fdb7a", group "kibana"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "e0ec1c73" finished with status "complete"
++ ./wait-for-job-to-run.sh kibana kibana 1
+172.22.44.241
+Job: kibana, Task: kibana, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 23:23:40 UTC 2017
+Job: kibana, Task: kibana, Requested: 1, Scheduled: 1, Dead: 0 Sun Feb 26 23:23:41 UTC 2017
++ ./wait-for-checks-to-be-green.sh kibana
+172.22.44.241
+No of checks for service kibana is 5. Passing is 2, sleeping for 1 sec.
+No of checks for service kibana is 5. Passing is 3, sleeping for 1 sec.
+No of checks for service kibana is 5. Passing is 3, sleeping for 1 sec.
+No of checks for service kibana is 5. Passing is 3, sleeping for 1 sec.
+No of checks for service kibana is 5. Passing is 4, sleeping for 1 sec.
+No of checks for service kibana is 5. Passing is 5, sleeping for 1 sec.
+All good for service kibana
++ nomad run ../setup/dev-env/nomad-jobs/job-definitions/zookeeper-single-node.nomad
+==> Monitoring evaluation "a852a380"
+    Evaluation triggered by job "zookeeper-single-node"
+    Allocation "a0ca0993" created: node "da0fdb7a", group "zookeeper"
+    Allocation "a0ca0993" status changed: "pending" -> "running"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "a852a380" finished with status "complete"
++ ./wait-for-job-to-run.sh zookeeper-single-node zookeeper-single-node 1
+172.22.44.241
+Job: zookeeper-single-node, Task: zookeeper-single-node, Requested: 1, Scheduled: 1, Dead: 0 Sun Feb 26 23:23:55 UTC 2017
++ ./wait-for-checks-to-be-green.sh zookeeper-single-node
+172.22.44.241
+No of checks for service zookeeper-single-node is 4. Passing is 1, sleeping for 1 sec.
+No of checks for service zookeeper-single-node is 4. Passing is 2, sleeping for 1 sec.
+No of checks for service zookeeper-single-node is 4. Passing is 2, sleeping for 1 sec.
+No of checks for service zookeeper-single-node is 4. Passing is 3, sleeping for 1 sec.
+No of checks for service zookeeper-single-node is 4. Passing is 4, sleeping for 1 sec.
+All good for service zookeeper-single-node
++ nomad run ../setup/dev-env/nomad-jobs/job-definitions/kafka-single-node.nomad
+==> Monitoring evaluation "40e08589"
+    Evaluation triggered by job "kafka-single-node"
+    Allocation "b37f74ad" created: node "da0fdb7a", group "kafka"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "40e08589" finished with status "complete"
++ ./wait-for-job-to-run.sh kafka-single-node kafka-single-node 1
+172.22.44.241
+Job: kafka-single-node, Task: kafka-single-node, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 23:24:06 UTC 2017
+Job: kafka-single-node, Task: kafka-single-node, Requested: 1, Scheduled: 1, Dead: 0 Sun Feb 26 23:24:07 UTC 2017
++ ./wait-for-checks-to-be-green.sh kafka-single-node
+172.22.44.241
+No of checks for service kafka-single-node is 5. Passing is 1, sleeping for 1 sec.
+No of checks for service kafka-single-node is 5. Passing is 1, sleeping for 1 sec.
+No of checks for service kafka-single-node is 5. Passing is 2, sleeping for 1 sec.
+No of checks for service kafka-single-node is 5. Passing is 2, sleeping for 1 sec.
+No of checks for service kafka-single-node is 5. Passing is 5, sleeping for 1 sec.
+All good for service kafka-single-node
++ ./KafkaSingleNode/produce-data.sh test-topic 1000
++ ./KafkaSingleNode/consume-data.sh test-topic
+% Reached end of topic test-topic [0] at offset 1000: exiting
++ nomad run ../setup/dev-env/nomad-jobs/job-definitions/postgres-single-node.nomad
+==> Monitoring evaluation "6aa3b498"
+    Evaluation triggered by job "postgres-single-node"
+    Allocation "6c76e39f" created: node "da0fdb7a", group "postgres"
+    Allocation "6c76e39f" status changed: "pending" -> "running"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "6aa3b498" finished with status "complete"
++ ./wait-for-job-to-run.sh postgres-single-node postgres-single-node 1
+172.22.44.241
+Job: postgres-single-node, Task: postgres-single-node, Requested: 1, Scheduled: 1, Dead: 0 Sun Feb 26 23:24:22 UTC 2017
++ ./wait-for-checks-to-be-green.sh postgres-single-node
+172.22.44.241
+No of checks for service postgres-single-node is 5. Passing is 2, sleeping for 1 sec.
+No of checks for service postgres-single-node is 5. Passing is 3, sleeping for 1 sec.
+No of checks for service postgres-single-node is 5. Passing is 4, sleeping for 1 sec.
+No of checks for service postgres-single-node is 5. Passing is 4, sleeping for 1 sec.
+No of checks for service postgres-single-node is 5. Passing is 4, sleeping for 1 sec.
+No of checks for service postgres-single-node is 5. Passing is 5, sleeping for 1 sec.
+All good for service postgres-single-node
++ ./PostgresMigration/migrate-postgres-database.sh postgres-single-node postgres secret postgres public
+                                 List of databases
+   Name    |  Owner   | Encoding |  Collate   |   Ctype    |   Access privileges   
+-----------+----------+----------+------------+------------+-----------------------
+ postgres  | postgres | UTF8     | en_US.utf8 | en_US.utf8 | 
+ template0 | postgres | UTF8     | en_US.utf8 | en_US.utf8 | =c/postgres          +
+           |          |          |            |            | postgres=CTc/postgres
+ template1 | postgres | UTF8     | en_US.utf8 | en_US.utf8 | =c/postgres          +
+           |          |          |            |            | postgres=CTc/postgres
+(3 rows)
+
+Postgres is up - so kicking Flyway off now
+Flyway is cleaning the database first
+Flyway 3.2.1 by Boxfuse
+
+Database: jdbc:postgresql://172.22.44.241:5432/postgres (PostgreSQL 9.3)
+Cleaned schema "public" (execution time 00:00.057s)
+Flyway is running pending migrations -if any- on the database
+Flyway 3.2.1 by Boxfuse
+
+Database: jdbc:postgresql://172.22.44.241:5432/postgres (PostgreSQL 9.3)
+Validated 3 migrations (execution time 00:00.049s)
+Creating Metadata table: "public"."schema_version"
+Current version of schema "public": << Empty Schema >>
+Migrating schema "public" to version 0001 - InitialSetup
+WARNING: DB: identifier "FK_public.BiometricSubCategory_public.BiometricCategory_BiometricCategoryId" will be truncated to "FK_public.BiometricSubCategory_public.BiometricCategory_Biometr" (SQL State: 42622 - Error Code: 0)
+Migrating schema "public" to version 0002 - InitialData
+Migrating schema "public" to version 0003 - SampleAppSetup
+Successfully applied 3 migrations to schema "public" (execution time 00:00.508s).
++ nomad run ../setup/dev-env/nomad-jobs/job-definitions/redis-single-node.nomad
+==> Monitoring evaluation "aadae51b"
+    Evaluation triggered by job "redis-single-node"
+    Allocation "4dd4eee8" created: node "da0fdb7a", group "redis"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "aadae51b" finished with status "complete"
++ ./wait-for-job-to-run.sh redis-single-node redis-single-node 1
+172.22.44.241
+Job: redis-single-node, Task: redis-single-node, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 23:24:38 UTC 2017
+Job: redis-single-node, Task: redis-single-node, Requested: 1, Scheduled: 1, Dead: 0 Sun Feb 26 23:24:40 UTC 2017
++ ./wait-for-checks-to-be-green.sh redis-single-node
+172.22.44.241
+No of checks for service redis-single-node is 5. Passing is 1, sleeping for 1 sec.
+No of checks for service redis-single-node is 5. Passing is 4, sleeping for 1 sec.
+No of checks for service redis-single-node is 5. Passing is 4, sleeping for 1 sec.
+No of checks for service redis-single-node is 5. Passing is 4, sleeping for 1 sec.
+No of checks for service redis-single-node is 5. Passing is 5, sleeping for 1 sec.
+All good for service redis-single-node
++ ./RedisSingleNode/import-data.sh
++ nomad run ../setup/dev-env/nomad-jobs/job-definitions/mongodb-single-node.nomad
+==> Monitoring evaluation "31ccb28e"
+    Evaluation triggered by job "mongodb-single-node"
+    Allocation "6fd6893d" created: node "da0fdb7a", group "mongodb"
+    Allocation "6fd6893d" status changed: "pending" -> "running"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "31ccb28e" finished with status "complete"
++ ./wait-for-job-to-run.sh mongodb-single-node mongodb-single-node 1
+172.22.44.241
+Job: mongodb-single-node, Task: mongodb-single-node, Requested: 1, Scheduled: 1, Dead: 0 Sun Feb 26 23:24:54 UTC 2017
++ ./wait-for-checks-to-be-green.sh mongodb-single-node
+172.22.44.241
+No of checks for service mongodb-single-node is 5. Passing is 3, sleeping for 1 sec.
+No of checks for service mongodb-single-node is 5. Passing is 4, sleeping for 1 sec.
+No of checks for service mongodb-single-node is 5. Passing is 4, sleeping for 1 sec.
+No of checks for service mongodb-single-node is 5. Passing is 5, sleeping for 1 sec.
+All good for service mongodb-single-node
++ ./MongoDbSingleNode/import-data.sh
+2017-02-26T23:25:03.827+0000	connected to: 172.22.44.241:27017
+2017-02-26T23:25:03.828+0000	dropping: test.restaurants
+2017-02-26T23:25:03.859+0000	imported 100 documents
++ nomad run ../setup/dev-env/nomad-jobs/job-definitions/backoffice-portal.nomad
+==> Monitoring evaluation "663e1459"
+    Evaluation triggered by job "backoffice-portal"
+    Allocation "ac2378d9" created: node "da0fdb7a", group "web-servers"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "663e1459" finished with status "complete"
++ ./wait-for-job-to-run.sh backoffice-portal backoffice-portal 1
+172.22.44.241
+Job: backoffice-portal, Task: backoffice-portal, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 23:25:04 UTC 2017
+Job: backoffice-portal, Task: backoffice-portal, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 23:25:05 UTC 2017
+Job: backoffice-portal, Task: backoffice-portal, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 23:25:06 UTC 2017
+Job: backoffice-portal, Task: backoffice-portal, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 23:25:07 UTC 2017
+Job: backoffice-portal, Task: backoffice-portal, Requested: 1, Scheduled: 1, Dead: 0 Sun Feb 26 23:25:08 UTC 2017
++ ./wait-for-checks-to-be-green.sh backoffice-portal
+172.22.44.241
+No of checks for service backoffice-portal is 5. Passing is 2, sleeping for 1 sec.
+No of checks for service backoffice-portal is 5. Passing is 2, sleeping for 1 sec.
+No of checks for service backoffice-portal is 5. Passing is 2, sleeping for 1 sec.
+No of checks for service backoffice-portal is 5. Passing is 2, sleeping for 1 sec.
+No of checks for service backoffice-portal is 5. Passing is 4, sleeping for 1 sec.
+No of checks for service backoffice-portal is 5. Passing is 5, sleeping for 1 sec.
+All good for service backoffice-portal
++ nomad run ../setup/dev-env/nomad-jobs/job-definitions/bio-id-app.nomad
+==> Monitoring evaluation "0d754f62"
+    Evaluation triggered by job "bio-id-app"
+    Allocation "e131d3f6" created: node "da0fdb7a", group "bio-id-app"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "0d754f62" finished with status "complete"
++ ./wait-for-job-to-run.sh bio-id-app bio-id-app 1
+172.22.44.241
+Job: bio-id-app, Task: bio-id-app, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 23:25:21 UTC 2017
+Job: bio-id-app, Task: bio-id-app, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 23:25:22 UTC 2017
+Job: bio-id-app, Task: bio-id-app, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 23:25:23 UTC 2017
+Job: bio-id-app, Task: bio-id-app, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 23:25:24 UTC 2017
+Job: bio-id-app, Task: bio-id-app, Requested: 1, Scheduled: 1, Dead: 0 Sun Feb 26 23:25:25 UTC 2017
++ ./wait-for-checks-to-be-green.sh bio-id-app
+172.22.44.241
+No of checks for service bio-id-app is 5. Passing is 1, sleeping for 1 sec.
+No of checks for service bio-id-app is 5. Passing is 2, sleeping for 1 sec.
+No of checks for service bio-id-app is 5. Passing is 2, sleeping for 1 sec.
+No of checks for service bio-id-app is 5. Passing is 3, sleeping for 1 sec.
+No of checks for service bio-id-app is 1. Passing is 0, sleeping for 1 sec.
+No of checks for service bio-id-app is 1. Passing is 0, sleeping for 1 sec.
+No of checks for service bio-id-app is 5. Passing is 1, sleeping for 1 sec.
+No of checks for service bio-id-app is 5. Passing is 1, sleeping for 1 sec.
+No of checks for service bio-id-app is 5. Passing is 2, sleeping for 1 sec.
+No of checks for service bio-id-app is 5. Passing is 4, sleeping for 1 sec.
+No of checks for service bio-id-app is 5. Passing is 5, sleeping for 1 sec.
+All good for service bio-id-app
++ nomad run ../setup/dev-env/nomad-jobs/job-definitions/persistence-worker.nomad
+==> Monitoring evaluation "e61e61cf"
+    Evaluation triggered by job "persistence-worker"
+    Allocation "ba455351" created: node "da0fdb7a", group "persistence-worker"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "e61e61cf" finished with status "complete"
++ ./wait-for-job-to-run.sh persistence-worker persistence-worker 1
+172.22.44.241
+Job: persistence-worker, Task: persistence-worker, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 23:25:48 UTC 2017
+Job: persistence-worker, Task: persistence-worker, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 23:25:50 UTC 2017
+Job: persistence-worker, Task: persistence-worker, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 23:25:51 UTC 2017
+Job: persistence-worker, Task: persistence-worker, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 23:25:52 UTC 2017
+Job: persistence-worker, Task: persistence-worker, Requested: 1, Scheduled: 1, Dead: 0 Sun Feb 26 23:25:53 UTC 2017
++ ./wait-for-checks-to-be-green.sh persistence-worker
+172.22.44.241
+No of checks for service persistence-worker is 4. Passing is 3, sleeping for 1 sec.
+No of checks for service persistence-worker is 4. Passing is 3, sleeping for 1 sec.
+No of checks for service persistence-worker is 4. Passing is 3, sleeping for 1 sec.
+No of checks for service persistence-worker is 4. Passing is 3, sleeping for 1 sec.
+No of checks for service persistence-worker is 4. Passing is 4, sleeping for 1 sec.
+All good for service persistence-worker
++ nomad run ../setup/dev-env/nomad-jobs/job-definitions/analytics-worker.nomad
+==> Monitoring evaluation "e313a93d"
+    Evaluation triggered by job "analytics-worker"
+    Allocation "97061c63" created: node "da0fdb7a", group "analytics-worker"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "e313a93d" finished with status "complete"
++ ./wait-for-job-to-run.sh analytics-worker analytics-worker 1
+172.22.44.241
+Job: analytics-worker, Task: analytics-worker, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 23:26:04 UTC 2017
+Job: analytics-worker, Task: analytics-worker, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 23:26:05 UTC 2017
+Job: analytics-worker, Task: analytics-worker, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 23:26:06 UTC 2017
+Job: analytics-worker, Task: analytics-worker, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 23:26:07 UTC 2017
+Job: analytics-worker, Task: analytics-worker, Requested: 1, Scheduled: 1, Dead: 0 Sun Feb 26 23:26:08 UTC 2017
++ ./wait-for-checks-to-be-green.sh analytics-worker
+172.22.44.241
+No of checks for service analytics-worker is 4. Passing is 1, sleeping for 1 sec.
+No of checks for service analytics-worker is 4. Passing is 2, sleeping for 1 sec.
+No of checks for service analytics-worker is 4. Passing is 2, sleeping for 1 sec.
+No of checks for service analytics-worker is 4. Passing is 2, sleeping for 1 sec.
+No of checks for service analytics-worker is 4. Passing is 2, sleeping for 1 sec.
+No of checks for service analytics-worker is 4. Passing is 4, sleeping for 1 sec.
+All good for service analytics-worker
+++ consul kv get conf/ext/lb-base-fqdn
+++ tr -d '\n'
++ LB_BASE_FQDN=local
++ [[ local = \l\o\c\a\l ]]
++ nomad run ../setup/dev-env/nomad-jobs/job-definitions/haproxy.nomad
+==> Monitoring evaluation "fe208d75"
+    Evaluation triggered by job "haproxy"
+    Allocation "1cd69b74" created: node "da0fdb7a", group "web"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "fe208d75" finished with status "complete"
++ ./wait-for-job-to-run.sh haproxy haproxy 1
+172.22.44.241
+Job: haproxy, Task: haproxy, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 23:26:21 UTC 2017
+Job: haproxy, Task: haproxy, Requested: 1, Scheduled: 1, Dead: 0 Sun Feb 26 23:26:22 UTC 2017
++ ./wait-for-checks-to-be-green.sh haproxy
+172.22.44.241
+No of checks for service haproxy is 4. Passing is 2, sleeping for 1 sec.
+No of checks for service haproxy is 4. Passing is 2, sleeping for 1 sec.
+No of checks for service haproxy is 4. Passing is 2, sleeping for 1 sec.
+No of checks for service haproxy is 4. Passing is 2, sleeping for 1 sec.
+No of checks for service haproxy is 4. Passing is 4, sleeping for 1 sec.
+All good for service haproxy
+[workspace] $ /bin/bash -eu /tmp/hudson8288464202826295925.sh
+172.22.44.241
+172.22.44.241
+Job: unit-integration-tests-1488151593, Task: tester, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 23:26:33 UTC 2017
+Job: unit-integration-tests-1488151593, Task: tester, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 23:26:34 UTC 2017
+Job: unit-integration-tests-1488151593, Task: tester, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 23:26:35 UTC 2017
+Job: unit-integration-tests-1488151593, Task: tester, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 23:26:37 UTC 2017
+Job: unit-integration-tests-1488151593, Task: tester, Requested: 1, Scheduled: 1, Dead: 0 Sun Feb 26 23:26:38 UTC 2017
+Job: unit-integration-tests-1488151593 is still running, Sun Feb 26 23:26:39 UTC 2017
+Job: unit-integration-tests-1488151593 is still running, Sun Feb 26 23:26:40 UTC 2017
+Job: unit-integration-tests-1488151593 is still running, Sun Feb 26 23:26:41 UTC 2017
+Job: unit-integration-tests-1488151593 is still running, Sun Feb 26 23:26:42 UTC 2017
+Job: unit-integration-tests-1488151593 is still running, Sun Feb 26 23:26:43 UTC 2017
+Job: unit-integration-tests-1488151593 is still running, Sun Feb 26 23:26:44 UTC 2017
+Job: unit-integration-tests-1488151593 is still running, Sun Feb 26 23:26:45 UTC 2017
+Job: unit-integration-tests-1488151593 is still running, Sun Feb 26 23:26:46 UTC 2017
+Job: unit-integration-tests-1488151593 is still running, Sun Feb 26 23:26:47 UTC 2017
+Job: unit-integration-tests-1488151593 is still running, Sun Feb 26 23:26:48 UTC 2017
+Job: unit-integration-tests-1488151593 is still running, Sun Feb 26 23:26:49 UTC 2017
+Job: unit-integration-tests-1488151593 is still running, Sun Feb 26 23:26:50 UTC 2017
+Job: unit-integration-tests-1488151593 is still running, Sun Feb 26 23:26:51 UTC 2017
+Job: unit-integration-tests-1488151593 is still running, Sun Feb 26 23:26:52 UTC 2017
+Job: unit-integration-tests-1488151593 is still running, Sun Feb 26 23:26:53 UTC 2017
+Job: unit-integration-tests-1488151593 is still running, Sun Feb 26 23:26:54 UTC 2017
+Job: unit-integration-tests-1488151593 is still running, Sun Feb 26 23:26:55 UTC 2017
+Job: unit-integration-tests-1488151593 is still running, Sun Feb 26 23:26:56 UTC 2017
+Job: unit-integration-tests-1488151593 is still running, Sun Feb 26 23:26:57 UTC 2017
+Job: unit-integration-tests-1488151593 is still running, Sun Feb 26 23:26:58 UTC 2017
+Job: unit-integration-tests-1488151593 is still running, Sun Feb 26 23:26:59 UTC 2017
+Job: unit-integration-tests-1488151593 is still running, Sun Feb 26 23:27:00 UTC 2017
+Job: unit-integration-tests-1488151593 is still running, Sun Feb 26 23:27:01 UTC 2017
+Job: unit-integration-tests-1488151593 is still running, Sun Feb 26 23:27:02 UTC 2017
+Job: unit-integration-tests-1488151593 is still running, Sun Feb 26 23:27:03 UTC 2017
+Job: unit-integration-tests-1488151593 is still running, Sun Feb 26 23:27:04 UTC 2017
+Job: unit-integration-tests-1488151593 is still running, Sun Feb 26 23:27:05 UTC 2017
+Job: unit-integration-tests-1488151593 is still running, Sun Feb 26 23:27:06 UTC 2017
+Job: unit-integration-tests-1488151593 is still running, Sun Feb 26 23:27:07 UTC 2017
+Job: unit-integration-tests-1488151593 is still running, Sun Feb 26 23:27:08 UTC 2017
+Job: unit-integration-tests-1488151593 is still running, Sun Feb 26 23:27:09 UTC 2017
+Job: unit-integration-tests-1488151593 is still running, Sun Feb 26 23:27:10 UTC 2017
+Job: unit-integration-tests-1488151593 is still running, Sun Feb 26 23:27:11 UTC 2017
+Job: unit-integration-tests-1488151593 is still running, Sun Feb 26 23:27:12 UTC 2017
+Job: unit-integration-tests-1488151593 is still running, Sun Feb 26 23:27:13 UTC 2017
+Job: unit-integration-tests-1488151593 is still running, Sun Feb 26 23:27:14 UTC 2017
+Job: unit-integration-tests-1488151593 is still running, Sun Feb 26 23:27:15 UTC 2017
+Job: unit-integration-tests-1488151593 is still running, Sun Feb 26 23:27:16 UTC 2017
+Job: unit-integration-tests-1488151593 is still running, Sun Feb 26 23:27:17 UTC 2017
+Job: unit-integration-tests-1488151593 is still running, Sun Feb 26 23:27:18 UTC 2017
+Job: unit-integration-tests-1488151593 is still running, Sun Feb 26 23:27:19 UTC 2017
+Job: unit-integration-tests-1488151593 is still running, Sun Feb 26 23:27:20 UTC 2017
+Job: unit-integration-tests-1488151593 is still running, Sun Feb 26 23:27:21 UTC 2017
+Job: unit-integration-tests-1488151593 is still running, Sun Feb 26 23:27:23 UTC 2017
+Job: unit-integration-tests-1488151593 is still running, Sun Feb 26 23:27:24 UTC 2017
+Job: unit-integration-tests-1488151593 is still running, Sun Feb 26 23:27:25 UTC 2017
+Job: unit-integration-tests-1488151593 is still running, Sun Feb 26 23:27:26 UTC 2017
+Job: unit-integration-tests-1488151593 is complete now, Sun Feb 26 23:27:27 UTC 2017
+complete
+TODO: gseng - change this
+Sleeping for 10 seconds to wait Consul to kick off and update config
+First updating the config file based on the service values from Consul
+﻿orm:
+  type: Ef
+
+database:
+  ## Postgres, MsSql
+  type: Postgres 
+  ## ReadCommitted, Snapshot, Serializable
+  defaultIsolationLevel: ReadCommitted
+
+postgres:
+  ip: 172.22.44.241
+  port: 5432
+
+msSql:
+
+logging:
+  ## Log4Net, LogStash
+  type: Log4Net
+
+logStash:
+  method: Tcp 
+  tcpEndpointIp: 172.22.44.241
+  tcpEndpointPort: 5000
+  numberOfTasks: 5
+
+distributedCacheProvider:
+  ## None, Redis
+  type: None
+
+miniProfilerSql:
+  enabled: false
+
+redisNodes:
+  nodes:
+    - ip: 172.22.44.241
+      port: 6379
+
+kafkaNodes:
+  nodes:
+    - ip: 172.22.44.241
+      port: 9092
+
+kafkaTopics:
+  topics:
+    - name: SampleApp
+      noOfPartitions: 4
+
+mongoReplicas:
+  replicas:
+    - ip: 172.22.44.241
+      port: 27017
+
+socialLogins:
+  - type: Facebook
+    defaultUserRole: User
+    appId: 1114776728606670
+    appSecret: 8e1cdc36ea0523c8c097dc825251d931
+    tokenExpire: 6
+The files to test are: Common.IntegrationTest.dll
+Common.UnitTest.dll
+xUnit.net Console Runner (64-bit .NET 4.0.30319.42000)
+  Discovering: Common.IntegrationTest
+  Discovered:  Common.IntegrationTest
+  Starting:    Common.IntegrationTest
+  Finished:    Common.IntegrationTest
+=== TEST EXECUTION SUMMARY ===
+   Common.IntegrationTest  Total: 77, Errors: 0, Failed: 0, Skipped: 0, Time: 33.491s
+xUnit.net Console Runner (64-bit .NET 4.0.30319.42000)
+  Discovering: Common.UnitTest
+  Discovered:  Common.UnitTest
+=== TEST EXECUTION SUMMARY ===
+   Common.UnitTest.dll  Total: 0
+[xUnit] [INFO] - Starting to record.
+[xUnit] [INFO] - Processing xUnit.Net-v2 (default)
+[xUnit] [INFO] - [xUnit.Net-v2 (default)] - 2 test report file(s) were found with the pattern '**/mgmt/setup/docker/UnitIntegrationTest/Test.Results/*.xml' relative to '/var/jenkins_home/jobs/bio-id-integration/workspace' for the testing framework 'xUnit.Net-v2 (default)'.
+[xUnit] [INFO] - Check 'Failed Tests' threshold.
+[xUnit] [INFO] - Check 'Skipped Tests' threshold.
+[xUnit] [INFO] - Setting the build status to SUCCESS
+[xUnit] [INFO] - Stopping recording.
+Build step 'Process xUnit test result report' changed build result to SUCCESS
+[workspace] $ /bin/bash -eu /tmp/hudson6514470625884600237.sh
+                                 List of databases
+   Name    |  Owner   | Encoding |  Collate   |   Ctype    |   Access privileges   
+-----------+----------+----------+------------+------------+-----------------------
+ postgres  | postgres | UTF8     | en_US.utf8 | en_US.utf8 | 
+ template0 | postgres | UTF8     | en_US.utf8 | en_US.utf8 | =c/postgres          +
+           |          |          |            |            | postgres=CTc/postgres
+ template1 | postgres | UTF8     | en_US.utf8 | en_US.utf8 | =c/postgres          +
+           |          |          |            |            | postgres=CTc/postgres
+(3 rows)
+
+Postgres is up - so kicking Flyway off now
+Flyway is cleaning the database first
+Flyway 3.2.1 by Boxfuse
+
+Database: jdbc:postgresql://172.22.44.241:5432/postgres (PostgreSQL 9.3)
+Cleaned schema "public" (execution time 00:00.045s)
+Flyway is running pending migrations -if any- on the database
+Flyway 3.2.1 by Boxfuse
+
+Database: jdbc:postgresql://172.22.44.241:5432/postgres (PostgreSQL 9.3)
+Validated 3 migrations (execution time 00:00.025s)
+Creating Metadata table: "public"."schema_version"
+Current version of schema "public": << Empty Schema >>
+Migrating schema "public" to version 0001 - InitialSetup
+WARNING: DB: identifier "FK_public.BiometricSubCategory_public.BiometricCategory_BiometricCategoryId" will be truncated to "FK_public.BiometricSubCategory_public.BiometricCategory_Biometr" (SQL State: 42622 - Error Code: 0)
+Migrating schema "public" to version 0002 - InitialData
+Migrating schema "public" to version 0003 - SampleAppSetup
+Successfully applied 3 migrations to schema "public" (execution time 00:00.214s).
+172.22.44.241
+172.22.44.241
+Job: acceptance-tests-1488151648, Task: tester, Requested: 1, Scheduled: 0, Dead: 0 Sun Feb 26 23:27:28 UTC 2017
+Job: acceptance-tests-1488151648, Task: tester, Requested: 1, Scheduled: 1, Dead: 0 Sun Feb 26 23:27:29 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:27:30 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:27:31 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:27:32 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:27:33 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:27:34 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:27:35 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:27:36 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:27:37 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:27:39 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:27:40 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:27:41 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:27:42 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:27:43 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:27:44 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:27:45 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:27:46 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:27:47 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:27:48 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:27:49 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:27:50 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:27:51 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:27:52 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:27:53 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:27:54 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:27:55 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:27:56 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:27:57 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:27:58 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:27:59 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:00 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:01 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:02 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:03 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:04 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:05 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:06 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:07 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:08 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:09 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:10 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:11 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:12 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:13 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:14 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:15 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:16 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:17 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:18 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:19 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:20 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:22 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:23 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:24 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:25 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:26 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:27 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:28 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:29 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:30 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:31 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:32 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:33 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:34 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:35 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:36 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:37 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:38 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:39 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:40 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:41 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:42 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:43 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:44 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:45 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:46 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:47 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:48 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:49 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:50 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:51 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:52 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:53 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:54 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:55 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:56 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:57 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:58 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:28:59 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:29:00 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:29:01 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:29:02 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:29:03 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:29:04 UTC 2017
+Job: acceptance-tests-1488151648 is still running, Sun Feb 26 23:29:05 UTC 2017
+Job: acceptance-tests-1488151648 is complete now, Sun Feb 26 23:29:06 UTC 2017
+complete
+Targetting the ip: bio-id-backoffice.local and port: 80
+Running test: /Acceptance.Tests/IoTSample/RegisterDevice.jmx output to: /Test.Results/RegisterDevice.jmx.jtl 
+Return code from JMeter was 0
+Test /Acceptance.Tests/IoTSample/RegisterDevice.jmx resulted in with Writing log file to: /jmeter/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Acceptance.Tests/IoTSample/RegisterDevice.jmx
+Starting the test @ Sun Feb 26 23:27:29 UTC 2017 (1488151649948)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary +      1 in 00:00:03 =    0.3/s Avg:  2483 Min:  2483 Max:  2483 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+summary +      2 in 00:00:01 =    2.8/s Avg:   342 Min:     1 Max:   684 Err:     0 (0.00%) Active: 0 Started: 1 Finished: 1
+summary =      3 in 00:00:04 =    0.8/s Avg:  1056 Min:     1 Max:  2483 Err:     0 (0.00%)
+Tidying up ...    @ Sun Feb 26 23:27:33 UTC 2017 (1488151653778)
+... end of run
+Running test: /Acceptance.Tests/IoTSample/Register10DevicesSend10Heartbeats.jmx output to: /Test.Results/Register10DevicesSend10Heartbeats.jmx.jtl 
+Return code from JMeter was 0
+Test /Acceptance.Tests/IoTSample/Register10DevicesSend10Heartbeats.jmx resulted in with Writing log file to: /jmeter/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Acceptance.Tests/IoTSample/Register10DevicesSend10Heartbeats.jmx
+Starting the test @ Sun Feb 26 23:27:35 UTC 2017 (1488151655310)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary =    130 in 00:00:10 =   13.1/s Avg:    51 Min:     0 Max:   129 Err:     0 (0.00%)
+Tidying up ...    @ Sun Feb 26 23:27:45 UTC 2017 (1488151665524)
+... end of run
+Running test: /Acceptance.Tests/IoTSample/SetHeartBeat50Times.jmx output to: /Test.Results/SetHeartBeat50Times.jmx.jtl 
+Return code from JMeter was 0
+Test /Acceptance.Tests/IoTSample/SetHeartBeat50Times.jmx resulted in with Writing log file to: /jmeter/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Acceptance.Tests/IoTSample/SetHeartBeat50Times.jmx
+Starting the test @ Sun Feb 26 23:27:46 UTC 2017 (1488151666684)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary =     53 in 00:00:24 =    2.2/s Avg:    56 Min:     1 Max:   182 Err:     0 (0.00%)
+Tidying up ...    @ Sun Feb 26 23:28:10 UTC 2017 (1488151690374)
+... end of run
+Running test: /Acceptance.Tests/IoTSample/GetHeartBeatDetails.jmx output to: /Test.Results/GetHeartBeatDetails.jmx.jtl 
+Return code from JMeter was 0
+Test /Acceptance.Tests/IoTSample/GetHeartBeatDetails.jmx resulted in with Writing log file to: /jmeter/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Acceptance.Tests/IoTSample/GetHeartBeatDetails.jmx
+Starting the test @ Sun Feb 26 23:28:11 UTC 2017 (1488151691776)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary =      7 in 00:00:06 =    1.1/s Avg:   133 Min:     1 Max:   604 Err:     0 (0.00%)
+Tidying up ...    @ Sun Feb 26 23:28:18 UTC 2017 (1488151698331)
+... end of run
+Running test: /Acceptance.Tests/IoTSample/SetHeartBeat.jmx output to: /Test.Results/SetHeartBeat.jmx.jtl 
+Return code from JMeter was 0
+Test /Acceptance.Tests/IoTSample/SetHeartBeat.jmx resulted in with Writing log file to: /jmeter/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Acceptance.Tests/IoTSample/SetHeartBeat.jmx
+Starting the test @ Sun Feb 26 23:28:19 UTC 2017 (1488151699599)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary =      4 in 00:00:01 =    5.9/s Avg:    50 Min:     2 Max:   129 Err:     0 (0.00%)
+Tidying up ...    @ Sun Feb 26 23:28:20 UTC 2017 (1488151700404)
+... end of run
+Running test: /Acceptance.Tests/IoTSample/GetHeartBeatDetailsNormalized.jmx output to: /Test.Results/GetHeartBeatDetailsNormalized.jmx.jtl 
+Return code from JMeter was 0
+Test /Acceptance.Tests/IoTSample/GetHeartBeatDetailsNormalized.jmx resulted in with Writing log file to: /jmeter/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Acceptance.Tests/IoTSample/GetHeartBeatDetailsNormalized.jmx
+Starting the test @ Sun Feb 26 23:28:21 UTC 2017 (1488151701611)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary +     53 in 00:00:09 =    6.1/s Avg:    50 Min:     8 Max:   128 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+summary +      1 in 00:00:00 =   43.5/s Avg:     1 Min:     1 Max:     1 Err:     0 (0.00%) Active: 0 Started: 1 Finished: 1
+summary =     54 in 00:00:09 =    6.2/s Avg:    49 Min:     1 Max:   128 Err:     0 (0.00%)
+Tidying up ...    @ Sun Feb 26 23:28:30 UTC 2017 (1488151710503)
+... end of run
+Running test: /Acceptance.Tests/IoTSample/DeviceAvarageAnalytics.jmx output to: /Test.Results/DeviceAvarageAnalytics.jmx.jtl 
+Return code from JMeter was 0
+Test /Acceptance.Tests/IoTSample/DeviceAvarageAnalytics.jmx resulted in with Writing log file to: /jmeter/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Acceptance.Tests/IoTSample/DeviceAvarageAnalytics.jmx
+Starting the test @ Sun Feb 26 23:28:31 UTC 2017 (1488151711636)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary +      1 in 00:00:01 =    1.7/s Avg:   168 Min:   168 Max:   168 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+summary +      2 in 00:00:00 =   37.0/s Avg:    12 Min:     1 Max:    23 Err:     0 (0.00%) Active: 0 Started: 1 Finished: 1
+summary =      3 in 00:00:01 =    4.6/s Avg:    64 Min:     1 Max:   168 Err:     0 (0.00%)
+Tidying up ...    @ Sun Feb 26 23:28:32 UTC 2017 (1488151712420)
+... end of run
+Running test: /Acceptance.Tests/IoTSample/DeviceHeartBeatDetails.jmx output to: /Test.Results/DeviceHeartBeatDetails.jmx.jtl 
+Return code from JMeter was 0
+Test /Acceptance.Tests/IoTSample/DeviceHeartBeatDetails.jmx resulted in with Writing log file to: /jmeter/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Acceptance.Tests/IoTSample/DeviceHeartBeatDetails.jmx
+Starting the test @ Sun Feb 26 23:28:33 UTC 2017 (1488151713687)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary +      1 in 00:00:01 =    1.8/s Avg:   153 Min:   153 Max:   153 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+summary +      2 in 00:00:00 =   33.9/s Avg:    11 Min:     2 Max:    21 Err:     0 (0.00%) Active: 0 Started: 1 Finished: 1
+summary =      3 in 00:00:01 =    4.9/s Avg:    58 Min:     2 Max:   153 Err:     0 (0.00%)
+Tidying up ...    @ Sun Feb 26 23:28:34 UTC 2017 (1488151714449)
+... end of run
+Running test: /Acceptance.Tests/Account/UserLoginLogout.jmx output to: /Test.Results/UserLoginLogout.jmx.jtl 
+Return code from JMeter was 0
+Test /Acceptance.Tests/Account/UserLoginLogout.jmx resulted in with Writing log file to: /jmeter/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Acceptance.Tests/Account/UserLoginLogout.jmx
+Starting the test @ Sun Feb 26 23:28:35 UTC 2017 (1488151715627)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary =      4 in 00:00:01 =    7.0/s Avg:    49 Min:     1 Max:   122 Err:     0 (0.00%)
+Tidying up ...    @ Sun Feb 26 23:28:36 UTC 2017 (1488151716335)
+... end of run
+Running test: /Acceptance.Tests/Account/RegisterUserWithModelStateError.jmx output to: /Test.Results/RegisterUserWithModelStateError.jmx.jtl 
+Return code from JMeter was 0
+Test /Acceptance.Tests/Account/RegisterUserWithModelStateError.jmx resulted in with Writing log file to: /jmeter/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Acceptance.Tests/Account/RegisterUserWithModelStateError.jmx
+Starting the test @ Sun Feb 26 23:28:37 UTC 2017 (1488151717633)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary =      2 in 00:00:00 =    5.4/s Avg:    57 Min:     2 Max:   113 Err:     0 (0.00%)
+Tidying up ...    @ Sun Feb 26 23:28:38 UTC 2017 (1488151718154)
+... end of run
+Running test: /Acceptance.Tests/Account/TokenHashPersistenceControl.jmx output to: /Test.Results/TokenHashPersistenceControl.jmx.jtl 
+Return code from JMeter was 0
+Test /Acceptance.Tests/Account/TokenHashPersistenceControl.jmx resulted in with Writing log file to: /jmeter/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Acceptance.Tests/Account/TokenHashPersistenceControl.jmx
+Starting the test @ Sun Feb 26 23:28:39 UTC 2017 (1488151719368)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary =      2 in 00:00:00 =    4.1/s Avg:    59 Min:     1 Max:   117 Err:     0 (0.00%)
+Tidying up ...    @ Sun Feb 26 23:28:40 UTC 2017 (1488151720108)
+... end of run
+Running test: /Acceptance.Tests/Account/Fragments/FragmentGetToken.jmx output to: /Test.Results/FragmentGetToken.jmx.jtl 
+Return code from JMeter was 0
+Test /Acceptance.Tests/Account/Fragments/FragmentGetToken.jmx resulted in with Writing log file to: /jmeter/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Acceptance.Tests/Account/Fragments/FragmentGetToken.jmx
+Starting the test @ Sun Feb 26 23:28:41 UTC 2017 (1488151721240)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary =      0 in 00:00:00 = ******/s Avg:     0 Min: 9223372036854775807 Max: -9223372036854775808 Err:     0 (0.00%)
+Tidying up ...    @ Sun Feb 26 23:28:41 UTC 2017 (1488151721410)
+... end of run
+Running test: /Acceptance.Tests/Account/RegisterUser.jmx output to: /Test.Results/RegisterUser.jmx.jtl 
+Return code from JMeter was 0
+Test /Acceptance.Tests/Account/RegisterUser.jmx resulted in with Writing log file to: /jmeter/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Acceptance.Tests/Account/RegisterUser.jmx
+Starting the test @ Sun Feb 26 23:28:42 UTC 2017 (1488151722675)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary =      4 in 00:00:01 =    8.0/s Avg:    45 Min:     1 Max:   133 Err:     0 (0.00%)
+Tidying up ...    @ Sun Feb 26 23:28:43 UTC 2017 (1488151723305)
+... end of run
+Running test: /Acceptance.Tests/BiometricIdentification/DataMatchBusinessErrors.jmx output to: /Test.Results/DataMatchBusinessErrors.jmx.jtl 
+Return code from JMeter was 0
+Test /Acceptance.Tests/BiometricIdentification/DataMatchBusinessErrors.jmx resulted in with Writing log file to: /jmeter/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Acceptance.Tests/BiometricIdentification/DataMatchBusinessErrors.jmx
+Starting the test @ Sun Feb 26 23:28:44 UTC 2017 (1488151724484)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary =      4 in 00:00:01 =    4.3/s Avg:    98 Min:     1 Max:   190 Err:     0 (0.00%)
+Tidying up ...    @ Sun Feb 26 23:28:45 UTC 2017 (1488151725592)
+... end of run
+Running test: /Acceptance.Tests/BiometricIdentification/EnrollmentBusinessErrors.jmx output to: /Test.Results/EnrollmentBusinessErrors.jmx.jtl 
+Return code from JMeter was 0
+Test /Acceptance.Tests/BiometricIdentification/EnrollmentBusinessErrors.jmx resulted in with Writing log file to: /jmeter/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Acceptance.Tests/BiometricIdentification/EnrollmentBusinessErrors.jmx
+Starting the test @ Sun Feb 26 23:28:46 UTC 2017 (1488151726853)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary =      5 in 00:00:01 =    6.6/s Avg:    78 Min:     1 Max:   164 Err:     0 (0.00%)
+Tidying up ...    @ Sun Feb 26 23:28:47 UTC 2017 (1488151727890)
+... end of run
+Running test: /Acceptance.Tests/BiometricIdentification/Enrollment.jmx output to: /Test.Results/Enrollment.jmx.jtl 
+Return code from JMeter was 0
+Test /Acceptance.Tests/BiometricIdentification/Enrollment.jmx resulted in with Writing log file to: /jmeter/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Acceptance.Tests/BiometricIdentification/Enrollment.jmx
+Starting the test @ Sun Feb 26 23:28:49 UTC 2017 (1488151729066)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary =      4 in 00:00:01 =    7.1/s Avg:    61 Min:     2 Max:   132 Err:     0 (0.00%)
+Tidying up ...    @ Sun Feb 26 23:28:49 UTC 2017 (1488151729778)
+... end of run
+Running test: /Acceptance.Tests/BiometricIdentification/GetToken.jmx output to: /Test.Results/GetToken.jmx.jtl 
+Return code from JMeter was 0
+Test /Acceptance.Tests/BiometricIdentification/GetToken.jmx resulted in with Writing log file to: /jmeter/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Acceptance.Tests/BiometricIdentification/GetToken.jmx
+Starting the test @ Sun Feb 26 23:28:50 UTC 2017 (1488151730914)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary =      1 in 00:00:00 =    2.6/s Avg:   114 Min:   114 Max:   114 Err:     0 (0.00%)
+Tidying up ...    @ Sun Feb 26 23:28:51 UTC 2017 (1488151731428)
+... end of run
+Running test: /Acceptance.Tests/BiometricIdentification/CheckIdentity.jmx output to: /Test.Results/CheckIdentity.jmx.jtl 
+Return code from JMeter was 0
+Test /Acceptance.Tests/BiometricIdentification/CheckIdentity.jmx resulted in with Writing log file to: /jmeter/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Acceptance.Tests/BiometricIdentification/CheckIdentity.jmx
+Starting the test @ Sun Feb 26 23:28:52 UTC 2017 (1488151732697)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary =      3 in 00:00:00 =    6.2/s Avg:    58 Min:     1 Max:   150 Err:     0 (0.00%)
+Tidying up ...    @ Sun Feb 26 23:28:53 UTC 2017 (1488151733301)
+... end of run
+Running test: /Acceptance.Tests/BiometricIdentification/EnrollmentWithLimitedUser.jmx output to: /Test.Results/EnrollmentWithLimitedUser.jmx.jtl 
+Return code from JMeter was 0
+Test /Acceptance.Tests/BiometricIdentification/EnrollmentWithLimitedUser.jmx resulted in with Writing log file to: /jmeter/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Acceptance.Tests/BiometricIdentification/EnrollmentWithLimitedUser.jmx
+Starting the test @ Sun Feb 26 23:28:54 UTC 2017 (1488151734478)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary =      3 in 00:00:01 =    5.7/s Avg:    65 Min:     1 Max:   139 Err:     0 (0.00%)
+Tidying up ...    @ Sun Feb 26 23:28:55 UTC 2017 (1488151735140)
+... end of run
+Running test: /Acceptance.Tests/BiometricIdentification/SimpleEnrollment.jmx output to: /Test.Results/SimpleEnrollment.jmx.jtl 
+Return code from JMeter was 0
+Test /Acceptance.Tests/BiometricIdentification/SimpleEnrollment.jmx resulted in with Writing log file to: /jmeter/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Acceptance.Tests/BiometricIdentification/SimpleEnrollment.jmx
+Starting the test @ Sun Feb 26 23:28:56 UTC 2017 (1488151736394)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary =      2 in 00:00:01 =    3.6/s Avg:    88 Min:    37 Max:   139 Err:     0 (0.00%)
+Tidying up ...    @ Sun Feb 26 23:28:57 UTC 2017 (1488151737093)
+... end of run
+Running test: /Acceptance.Tests/BiometricIdentification/Fragments/FragmentEnrollment.jmx output to: /Test.Results/FragmentEnrollment.jmx.jtl 
+Return code from JMeter was 0
+Test /Acceptance.Tests/BiometricIdentification/Fragments/FragmentEnrollment.jmx resulted in with Writing log file to: /jmeter/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Acceptance.Tests/BiometricIdentification/Fragments/FragmentEnrollment.jmx
+Starting the test @ Sun Feb 26 23:28:58 UTC 2017 (1488151738255)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary =      0 in 00:00:00 = ******/s Avg:     0 Min: 9223372036854775807 Max: -9223372036854775808 Err:     0 (0.00%)
+Tidying up ...    @ Sun Feb 26 23:28:58 UTC 2017 (1488151738446)
+... end of run
+Running test: /Acceptance.Tests/BiometricIdentification/EnrollmentUpdate.jmx output to: /Test.Results/EnrollmentUpdate.jmx.jtl 
+Return code from JMeter was 0
+Test /Acceptance.Tests/BiometricIdentification/EnrollmentUpdate.jmx resulted in with Writing log file to: /jmeter/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Acceptance.Tests/BiometricIdentification/EnrollmentUpdate.jmx
+Starting the test @ Sun Feb 26 23:28:59 UTC 2017 (1488151739779)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary +      1 in 00:00:00 =    2.2/s Avg:   112 Min:   112 Max:   112 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+summary +      4 in 00:00:00 =   20.4/s Avg:    39 Min:     2 Max:    78 Err:     0 (0.00%) Active: 0 Started: 1 Finished: 1
+summary =      5 in 00:00:01 =    7.8/s Avg:    54 Min:     2 Max:   112 Err:     0 (0.00%)
+Tidying up ...    @ Sun Feb 26 23:29:00 UTC 2017 (1488151740676)
+... end of run
+Running test: /Acceptance.Tests/BiometricIdentification/DataMatch.jmx output to: /Test.Results/DataMatch.jmx.jtl 
+Return code from JMeter was 0
+Test /Acceptance.Tests/BiometricIdentification/DataMatch.jmx resulted in with Writing log file to: /jmeter/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Acceptance.Tests/BiometricIdentification/DataMatch.jmx
+Starting the test @ Sun Feb 26 23:29:01 UTC 2017 (1488151741859)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary +      1 in 00:00:00 =    2.2/s Avg:   122 Min:   122 Max:   122 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+summary +      3 in 00:00:00 =    6.9/s Avg:   133 Min:     1 Max:   369 Err:     0 (0.00%) Active: 0 Started: 1 Finished: 1
+summary =      4 in 00:00:01 =    4.5/s Avg:   130 Min:     1 Max:   369 Err:     0 (0.00%)
+Tidying up ...    @ Sun Feb 26 23:29:03 UTC 2017 (1488151743009)
+... end of run
+Running test: /Acceptance.Tests/BiometricIdentification/CategorySubCategoryValidator.jmx output to: /Test.Results/CategorySubCategoryValidator.jmx.jtl 
+Return code from JMeter was 0
+Test /Acceptance.Tests/BiometricIdentification/CategorySubCategoryValidator.jmx resulted in with Writing log file to: /jmeter/jmeter.log
+Creating summariser <summary>
+Created the tree successfully using /Acceptance.Tests/BiometricIdentification/CategorySubCategoryValidator.jmx
+Starting the test @ Sun Feb 26 23:29:04 UTC 2017 (1488151744165)
+Waiting for possible Shutdown/StopTestNow/Heapdump message on port 4445
+summary +      1 in 00:00:00 =    2.4/s Avg:   127 Min:   127 Max:   127 Err:     0 (0.00%) Active: 1 Started: 1 Finished: 0
+summary +     11 in 00:00:00 =   28.8/s Avg:    30 Min:     0 Max:    66 Err:     0 (0.00%) Active: 0 Started: 1 Finished: 1
+summary =     12 in 00:00:01 =   14.9/s Avg:    38 Min:     0 Max:   127 Err:     0 (0.00%)
+Tidying up ...    @ Sun Feb 26 23:29:05 UTC 2017 (1488151745091)
+... end of run
+No error occurred, bailing out OK
+
+
+
+Performance: Recording JMeter reports '**/mgmt/setup/docker/AcceptanceTest/Test.Results/*.jtl'
+Performance: Parsing JMeter report file '/var/jenkins_home/jobs/bio-id-integration/builds/2/performance-reports/JMeter/CategorySubCategoryValidator.jmx.jtl'.
+Performance: Parsing JMeter report file '/var/jenkins_home/jobs/bio-id-integration/builds/2/performance-reports/JMeter/CheckIdentity.jmx.jtl'.
+Performance: Parsing JMeter report file '/var/jenkins_home/jobs/bio-id-integration/builds/2/performance-reports/JMeter/DataMatch.jmx.jtl'.
+Performance: Parsing JMeter report file '/var/jenkins_home/jobs/bio-id-integration/builds/2/performance-reports/JMeter/DataMatchBusinessErrors.jmx.jtl'.
+Performance: Parsing JMeter report file '/var/jenkins_home/jobs/bio-id-integration/builds/2/performance-reports/JMeter/DeviceAvarageAnalytics.jmx.jtl'.
+Performance: Parsing JMeter report file '/var/jenkins_home/jobs/bio-id-integration/builds/2/performance-reports/JMeter/DeviceHeartBeatDetails.jmx.jtl'.
+Performance: Parsing JMeter report file '/var/jenkins_home/jobs/bio-id-integration/builds/2/performance-reports/JMeter/Enrollment.jmx.jtl'.
+Performance: Parsing JMeter report file '/var/jenkins_home/jobs/bio-id-integration/builds/2/performance-reports/JMeter/EnrollmentBusinessErrors.jmx.jtl'.
+Performance: Parsing JMeter report file '/var/jenkins_home/jobs/bio-id-integration/builds/2/performance-reports/JMeter/EnrollmentUpdate.jmx.jtl'.
+Performance: Parsing JMeter report file '/var/jenkins_home/jobs/bio-id-integration/builds/2/performance-reports/JMeter/EnrollmentWithLimitedUser.jmx.jtl'.
+Performance: Parsing JMeter report file '/var/jenkins_home/jobs/bio-id-integration/builds/2/performance-reports/JMeter/FragmentEnrollment.jmx.jtl'.
+Performance: Parsing JMeter report file '/var/jenkins_home/jobs/bio-id-integration/builds/2/performance-reports/JMeter/FragmentGetToken.jmx.jtl'.
+Performance: Parsing JMeter report file '/var/jenkins_home/jobs/bio-id-integration/builds/2/performance-reports/JMeter/GetHeartBeatDetails.jmx.jtl'.
+Performance: Parsing JMeter report file '/var/jenkins_home/jobs/bio-id-integration/builds/2/performance-reports/JMeter/GetHeartBeatDetailsNormalized.jmx.jtl'.
+Performance: Parsing JMeter report file '/var/jenkins_home/jobs/bio-id-integration/builds/2/performance-reports/JMeter/GetToken.jmx.jtl'.
+Performance: Parsing JMeter report file '/var/jenkins_home/jobs/bio-id-integration/builds/2/performance-reports/JMeter/Register10DevicesSend10Heartbeats.jmx.jtl'.
+Performance: Parsing JMeter report file '/var/jenkins_home/jobs/bio-id-integration/builds/2/performance-reports/JMeter/RegisterDevice.jmx.jtl'.
+Performance: Parsing JMeter report file '/var/jenkins_home/jobs/bio-id-integration/builds/2/performance-reports/JMeter/RegisterUser.jmx.jtl'.
+Performance: Parsing JMeter report file '/var/jenkins_home/jobs/bio-id-integration/builds/2/performance-reports/JMeter/RegisterUserWithModelStateError.jmx.jtl'.
+Performance: Parsing JMeter report file '/var/jenkins_home/jobs/bio-id-integration/builds/2/performance-reports/JMeter/SetHeartBeat.jmx.jtl'.
+Performance: Parsing JMeter report file '/var/jenkins_home/jobs/bio-id-integration/builds/2/performance-reports/JMeter/SetHeartBeat50Times.jmx.jtl'.
+Performance: Parsing JMeter report file '/var/jenkins_home/jobs/bio-id-integration/builds/2/performance-reports/JMeter/SimpleEnrollment.jmx.jtl'.
+Performance: Parsing JMeter report file '/var/jenkins_home/jobs/bio-id-integration/builds/2/performance-reports/JMeter/TokenHashPersistenceControl.jmx.jtl'.
+Performance: Parsing JMeter report file '/var/jenkins_home/jobs/bio-id-integration/builds/2/performance-reports/JMeter/UserLoginLogout.jmx.jtl'.
+Performance: Percentage of errors greater or equal than 0% sets the build as unstable
+Performance: Percentage of errors greater or equal than 0% sets the build as failure
+
+
+
+CategorySubCategoryValidator.jmx.jtl has an average of: 38
+Performance: File CategorySubCategoryValidator.jmx.jtl reported 0.0% of errors [SUCCESS]. Build status is: SUCCESS
+
+
+
+CheckIdentity.jmx.jtl has an average of: 58
+Performance: File CheckIdentity.jmx.jtl reported 0.0% of errors [SUCCESS]. Build status is: SUCCESS
+
+
+
+DataMatch.jmx.jtl has an average of: 130
+Performance: File DataMatch.jmx.jtl reported 0.0% of errors [SUCCESS]. Build status is: SUCCESS
+
+
+
+DataMatchBusinessErrors.jmx.jtl has an average of: 98
+Performance: File DataMatchBusinessErrors.jmx.jtl reported 0.0% of errors [SUCCESS]. Build status is: SUCCESS
+
+
+
+DeviceAvarageAnalytics.jmx.jtl has an average of: 64
+Performance: File DeviceAvarageAnalytics.jmx.jtl reported 0.0% of errors [SUCCESS]. Build status is: SUCCESS
+
+
+
+DeviceHeartBeatDetails.jmx.jtl has an average of: 58
+Performance: File DeviceHeartBeatDetails.jmx.jtl reported 0.0% of errors [SUCCESS]. Build status is: SUCCESS
+
+
+
+Enrollment.jmx.jtl has an average of: 61
+Performance: File Enrollment.jmx.jtl reported 0.0% of errors [SUCCESS]. Build status is: SUCCESS
+
+
+
+EnrollmentBusinessErrors.jmx.jtl has an average of: 78
+Performance: File EnrollmentBusinessErrors.jmx.jtl reported 0.0% of errors [SUCCESS]. Build status is: SUCCESS
+
+
+
+EnrollmentUpdate.jmx.jtl has an average of: 54
+Performance: File EnrollmentUpdate.jmx.jtl reported 0.0% of errors [SUCCESS]. Build status is: SUCCESS
+
+
+
+EnrollmentWithLimitedUser.jmx.jtl has an average of: 65
+Performance: File EnrollmentWithLimitedUser.jmx.jtl reported 0.0% of errors [SUCCESS]. Build status is: SUCCESS
+
+
+
+FragmentEnrollment.jmx.jtl has an average of: 0
+Performance: File FragmentEnrollment.jmx.jtl reported 0.0% of errors [SUCCESS]. Build status is: SUCCESS
+
+
+
+FragmentGetToken.jmx.jtl has an average of: 0
+Performance: File FragmentGetToken.jmx.jtl reported 0.0% of errors [SUCCESS]. Build status is: SUCCESS
+
+
+
+GetHeartBeatDetails.jmx.jtl has an average of: 133
+Performance: File GetHeartBeatDetails.jmx.jtl reported 0.0% of errors [SUCCESS]. Build status is: SUCCESS
+
+
+
+GetHeartBeatDetailsNormalized.jmx.jtl has an average of: 49
+Performance: File GetHeartBeatDetailsNormalized.jmx.jtl reported 0.0% of errors [SUCCESS]. Build status is: SUCCESS
+
+
+
+GetToken.jmx.jtl has an average of: 114
+Performance: File GetToken.jmx.jtl reported 0.0% of errors [SUCCESS]. Build status is: SUCCESS
+
+
+
+Register10DevicesSend10Heartbeats.jmx.jtl has an average of: 51
+Performance: File Register10DevicesSend10Heartbeats.jmx.jtl reported 0.0% of errors [SUCCESS]. Build status is: SUCCESS
+
+
+
+RegisterDevice.jmx.jtl has an average of: 1056
+Performance: File RegisterDevice.jmx.jtl reported 0.0% of errors [SUCCESS]. Build status is: SUCCESS
+
+
+
+RegisterUser.jmx.jtl has an average of: 45
+Performance: File RegisterUser.jmx.jtl reported 0.0% of errors [SUCCESS]. Build status is: SUCCESS
+
+
+
+RegisterUserWithModelStateError.jmx.jtl has an average of: 57
+Performance: File RegisterUserWithModelStateError.jmx.jtl reported 0.0% of errors [SUCCESS]. Build status is: SUCCESS
+
+
+
+SetHeartBeat.jmx.jtl has an average of: 50
+Performance: File SetHeartBeat.jmx.jtl reported 0.0% of errors [SUCCESS]. Build status is: SUCCESS
+
+
+
+SetHeartBeat50Times.jmx.jtl has an average of: 56
+Performance: File SetHeartBeat50Times.jmx.jtl reported 0.0% of errors [SUCCESS]. Build status is: SUCCESS
+
+
+
+SimpleEnrollment.jmx.jtl has an average of: 88
+Performance: File SimpleEnrollment.jmx.jtl reported 0.0% of errors [SUCCESS]. Build status is: SUCCESS
+
+
+
+TokenHashPersistenceControl.jmx.jtl has an average of: 59
+Performance: File TokenHashPersistenceControl.jmx.jtl reported 0.0% of errors [SUCCESS]. Build status is: SUCCESS
+
+
+
+UserLoginLogout.jmx.jtl has an average of: 49
+Performance: File UserLoginLogout.jmx.jtl reported 0.0% of errors [SUCCESS]. Build status is: SUCCESS
+
+
+
+[PostBuildScript] - Execution post build scripts.
+[workspace] $ /bin/bash -eu /tmp/hudson4975525271173229879.sh
++ source ./export-control-tool-ips.sh
++++ dirname ./export-control-tool-ips.sh
+++ CURRENT_DIR=.
+++ source ./get-ip.sh
+++++ ifconfig eth0
+++++ grep 'inet addr'
+++++ awk '{ print substr($2,6) }'
++++ NEW_IF_IP=
++++ [[ -z '' ]]
+++++ ifconfig enp0s8
+++++ grep 'inet addr'
+++++ awk '{ print substr($2,6) }'
++++ NEW_IF_IP=
++++ [[ -z '' ]]
++++ NEW_IF_IP=172.22.44.241
++++ SERVER_IF_IP=172.22.44.241
++++ echo 172.22.44.241
+172.22.44.241
+++ export SERVER_IF_IP=172.22.44.241
+++ SERVER_IF_IP=172.22.44.241
+++ export CONSUL_HTTP_ADDR=172.22.44.241:8500
+++ CONSUL_HTTP_ADDR=172.22.44.241:8500
+++ export NOMAD_ADDR=http://172.22.44.241:4646
+++ NOMAD_ADDR=http://172.22.44.241:4646
++ nomad stop -yes haproxy
+==> Monitoring evaluation "6b836302"
+    Evaluation triggered by job "haproxy"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "6b836302" finished with status "complete"
++ nomad stop -yes es-single-node
+==> Monitoring evaluation "8d18802a"
+    Evaluation triggered by job "es-single-node"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "8d18802a" finished with status "complete"
++ nomad stop -yes logstash-bio-id-app
+==> Monitoring evaluation "61814f33"
+    Evaluation triggered by job "logstash-bio-id-app"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "61814f33" finished with status "complete"
++ nomad stop -yes logstash-docker-gelf
+==> Monitoring evaluation "2ac6e97a"
+    Evaluation triggered by job "logstash-docker-gelf"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "2ac6e97a" finished with status "complete"
++ nomad stop -yes kibana
+==> Monitoring evaluation "49dcc5cb"
+    Evaluation triggered by job "kibana"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "49dcc5cb" finished with status "complete"
++ nomad stop -yes postgres-single-node
+==> Monitoring evaluation "43c5f696"
+    Evaluation triggered by job "postgres-single-node"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "43c5f696" finished with status "complete"
++ nomad stop -yes bio-id-app
+==> Monitoring evaluation "fba2d68e"
+    Evaluation triggered by job "bio-id-app"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "fba2d68e" finished with status "complete"
++ nomad stop -yes persistence-worker
+==> Monitoring evaluation "dd69e419"
+    Evaluation triggered by job "persistence-worker"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "dd69e419" finished with status "complete"
++ nomad stop -yes analytics-worker
+==> Monitoring evaluation "97ca668c"
+    Evaluation triggered by job "analytics-worker"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "97ca668c" finished with status "complete"
++ nomad stop -yes backoffice-portal
+==> Monitoring evaluation "b27a40ec"
+    Evaluation triggered by job "backoffice-portal"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "b27a40ec" finished with status "complete"
++ nomad stop -yes redis-single-node
+==> Monitoring evaluation "197d4528"
+    Evaluation triggered by job "redis-single-node"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "197d4528" finished with status "complete"
++ nomad stop -yes mongodb-single-node
+==> Monitoring evaluation "df17941f"
+    Evaluation triggered by job "mongodb-single-node"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "df17941f" finished with status "complete"
++ nomad stop -yes zookeeper-single-node
+==> Monitoring evaluation "eb3ef7de"
+    Evaluation triggered by job "zookeeper-single-node"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "eb3ef7de" finished with status "complete"
++ nomad stop -yes kafka-single-node
+==> Monitoring evaluation "04eaa0d5"
+    Evaluation triggered by job "kafka-single-node"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "04eaa0d5" finished with status "complete"
++ nomad stop -yes hashi-ui
+==> Monitoring evaluation "8b45b0d2"
+    Evaluation triggered by job "hashi-ui"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "8b45b0d2" finished with status "complete"
++ nomad stop -yes fabio
+==> Monitoring evaluation "5b710a47"
+    Evaluation triggered by job "fabio"
+    Evaluation status changed: "pending" -> "complete"
+==> Evaluation "5b710a47" finished with status "complete"
++ set -e
++ make nomad-gc
+## GC Nomad Batch Jobs to be able to resched jobs
+curl -f -X PUT "http://172.22.44.241:4646"/v1/system/gc || true
+  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                 Dload  Upload   Total   Spent    Left  Speed
+  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0
++ exit 0
+Finished: SUCCESS

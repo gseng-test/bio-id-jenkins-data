@@ -1,0 +1,732 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="182" it="0" lt="182" ct="84" ts="1488151687098" s="true" lb="Get Token" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="912" sby="288" ng="1" na="1">
+  <assertionResult>
+    <name>Should Return 200 Response</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Should Have a Valid Bearer Token</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage>Undetermined failure</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="17" it="0" lt="17" ct="0" ts="1488151687373" s="true" lb="RegisterDevice" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="831" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="59" it="0" lt="59" ct="0" ts="1488151687401" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1155" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="62" it="0" lt="62" ct="0" ts="1488151687462" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1156" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="56" it="0" lt="55" ct="0" ts="1488151687526" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1156" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="51" it="0" lt="51" ct="0" ts="1488151687585" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1156" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="58" it="0" lt="58" ct="0" ts="1488151687638" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1156" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="53" it="0" lt="53" ct="0" ts="1488151687699" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1155" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="53" it="0" lt="53" ct="0" ts="1488151687755" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1156" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="54" it="0" lt="54" ct="0" ts="1488151687810" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1156" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="57" it="0" lt="57" ct="0" ts="1488151687867" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1156" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="50" it="0" lt="50" ct="0" ts="1488151687926" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1156" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="52" it="0" lt="52" ct="0" ts="1488151687980" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1156" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="54" it="0" lt="54" ct="0" ts="1488151688034" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1155" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="50" it="0" lt="50" ct="0" ts="1488151688090" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1155" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="57" it="0" lt="57" ct="0" ts="1488151688142" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1156" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="50" it="0" lt="50" ct="0" ts="1488151688202" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1155" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="50" it="0" lt="50" ct="0" ts="1488151688253" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1156" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="55" it="0" lt="55" ct="0" ts="1488151688305" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1156" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="53" it="0" lt="53" ct="0" ts="1488151688363" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1156" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="99" it="0" lt="99" ct="0" ts="1488151688421" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1156" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="96" it="0" lt="96" ct="0" ts="1488151688523" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1155" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="78" it="0" lt="78" ct="0" ts="1488151688622" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1156" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="55" it="0" lt="54" ct="0" ts="1488151688701" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1156" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="58" it="0" lt="58" ct="0" ts="1488151688758" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1156" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="54" it="0" lt="54" ct="0" ts="1488151688818" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1155" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="50" it="0" lt="50" ct="0" ts="1488151688874" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1156" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="51" it="0" lt="51" ct="0" ts="1488151688925" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1155" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="56" it="0" lt="56" ct="0" ts="1488151688980" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1156" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="58" it="0" lt="58" ct="0" ts="1488151689038" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1156" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="55" it="0" lt="55" ct="0" ts="1488151689114" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1155" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="53" it="0" lt="53" ct="1" ts="1488151689171" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1155" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="52" it="0" lt="52" ct="0" ts="1488151689226" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1155" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="48" it="0" lt="48" ct="0" ts="1488151689280" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1155" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="50" it="0" lt="50" ct="0" ts="1488151689330" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1156" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="53" it="0" lt="53" ct="0" ts="1488151689383" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1155" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="49" it="0" lt="49" ct="0" ts="1488151689438" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1155" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="52" it="0" lt="52" ct="0" ts="1488151689489" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1156" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="60" it="0" lt="60" ct="0" ts="1488151689544" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1155" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="59" it="0" lt="59" ct="0" ts="1488151689606" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1156" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="78" it="0" lt="78" ct="0" ts="1488151689670" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1155" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="46" it="0" lt="46" ct="0" ts="1488151689750" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1155" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="54" it="0" lt="54" ct="0" ts="1488151689798" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1156" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="51" it="0" lt="51" ct="0" ts="1488151689854" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1156" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="54" it="0" lt="54" ct="0" ts="1488151689908" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1156" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="55" it="0" lt="55" ct="0" ts="1488151689966" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1155" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="53" it="0" lt="53" ct="0" ts="1488151690023" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1155" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="50" it="0" lt="50" ct="0" ts="1488151690078" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1155" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="47" it="0" lt="47" ct="0" ts="1488151690130" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1156" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="55" it="0" lt="54" ct="0" ts="1488151690178" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1155" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="49" it="0" lt="49" ct="0" ts="1488151690242" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1156" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="51" it="0" lt="51" ct="0" ts="1488151690293" s="true" lb="HeartBeat" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="210" sby="1156" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<sample t="1" it="0" lt="0" ct="0" ts="1488151690370" s="true" lb="Debug Sampler" rc="200" rm="OK" tn="HeartBeat Test 1-1" dt="text" by="1035" sby="0" ng="1" na="1"/>
+
+</testResults>

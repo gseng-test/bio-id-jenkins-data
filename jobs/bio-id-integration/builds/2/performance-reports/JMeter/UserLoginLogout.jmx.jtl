@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testResults version="1.2">
+<httpSample t="122" it="0" lt="122" ct="60" ts="1488151716034" s="true" lb="Get Token" rc="200" rm="OK" tn="Biometric Identification User Login Logout 1-1" dt="text" by="912" sby="288" ng="1" na="1">
+  <assertionResult>
+    <name>Should Return 200 Response</name>
+    <failure>false</failure>
+    <error>false</error>
+  </assertionResult>
+  <assertionResult>
+    <name>Should Have a Valid Bearer Token</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage>Undetermined failure</failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="30" it="0" lt="30" ct="0" ts="1488151716230" s="true" lb="User Login" rc="200" rm="OK" tn="Biometric Identification User Login Logout 1-1" dt="text" by="210" sby="815" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<httpSample t="46" it="0" lt="46" ct="0" ts="1488151716266" s="true" lb="User Logout" rc="200" rm="OK" tn="Biometric Identification User Login Logout 1-1" dt="text" by="210" sby="755" ng="1" na="1">
+  <assertionResult>
+    <name>Status code must be 200</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+  <assertionResult>
+    <name>Code must be success</name>
+    <failure>false</failure>
+    <error>false</error>
+    <failureMessage></failureMessage>
+  </assertionResult>
+</httpSample>
+<sample t="1" it="0" lt="0" ct="0" ts="1488151716331" s="true" lb="Debug Sampler" rc="200" rm="OK" tn="Biometric Identification User Login Logout 1-1" dt="text" by="977" sby="0" ng="1" na="1"/>
+
+</testResults>
